@@ -7,7 +7,10 @@ const App = () => {
   return (
     <div className="relative overflow-hidden">
       <div className="h-screen w-full bg-black relative overflow-hidden">
-        <div className="lg:w-2/4 lg:h-auto h-3/4  -right-96 lg:-right-32 -z-0 lg:-top-56 lg:blur-[200px] blur-[175px] aspect-square rounded-full absolute bg-primary-tealBlue"></div>
+        <div 
+       
+        
+        className="lg:w-2/4 lg:h-auto h-4/5  -right-96 lg:-right-32 -z-0 lg:-top-56 top-16 lg:blur-[200px] blur-[100px] aspect-square rounded-full absolute bg-primary-tealBlue"></div>
         <motion.h3 
          initial={{
           y: 350,
@@ -65,11 +68,11 @@ const App = () => {
               }}
               animate={{
                 y: 0,
-            
+                rotate: [0,360],
               }}
               transition={{
                 y: { duration: 0.5, delay: 2 },
-              
+                rotate: { duration: 5, repeat: Infinity },
               }}
               src={Planet}
               alt="planet"
@@ -85,6 +88,7 @@ const App = () => {
               animate={{
                 y: 0,
                 opacity: 1,
+              
               }}
               transition={{
                 y: { duration: 0.5, delay: 2 },
