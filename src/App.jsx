@@ -10,7 +10,7 @@ const App = () => {
         <div 
        
         
-        className="lg:w-2/4 lg:h-auto h-3/5    -right-96 lg:-right-32 -z-0 lg:-top-56 top-16 blur-[150px] aspect-square rounded-full absolute bg-primary-tealBlue"></div>
+        className="lg:w-2/4 lg:h-auto h-4/6    -right-96 lg:-right-32 -z-0 lg:-top-56 top-16 blur-[125px] aspect-square rounded-full absolute bg-primary-tealBlue"></div>
         <motion.h3 
          initial={{
           y: 350,
