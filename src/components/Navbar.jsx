@@ -4,7 +4,7 @@ import Logo from "../assets/logoNavbar.png";
 const Navbar = () => {
     const location = useLocation()
     return (
-        <nav className="flex px-24 py-3 justify-between shadow-lg items-center">
+        <nav className="flex px-24 py-3 justify-between shadow-lg items-center bg-white">
             <img src={Logo} className="h-20" draggable="false" alt="logo" />
             <ul className="flex gap-10 font-helvetica-regular items-center h-full text-primary-navbarText ">
                 <Link to={'/'} href="" className="relative group">
