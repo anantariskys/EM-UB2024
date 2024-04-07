@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
     return (
-        <section className="py-10 h-screen w-full" id="hero">
+        <section className="py-10 h-screen w-full bg-white" id="hero">
             <Splide
                 options={{
                     perPage: 1,

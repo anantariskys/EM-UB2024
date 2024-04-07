@@ -13,9 +13,9 @@ import VisiMisi from "../components/sections/landingPage/VisiMisi";
 const LandingPage = () => {
   
     return (
-        <div className="scroll-smooth" >
+        <div className="scroll-smooth bg-white" >
             <HeroSection />
-            <section className="px-24 w-full flex flex-col py-10 justify-between">
+            <section className="px-24 w-full flex flex-col py-10 justify-between bg-white">
                 <div className="w-3/5 font-helvetica-regular flex-col flex gap-10 text-primary-charcoalGray">
                     <h1 className="text-7xl font-bold">
                         EM UB 2024 Kabinet Cerita Kita

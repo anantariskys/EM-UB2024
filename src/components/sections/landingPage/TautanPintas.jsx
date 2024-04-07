@@ -14,7 +14,7 @@ const TautanPintas = () => {
         },
     ];
   return (
-    <section className="py-10 px-24 font-helvetica-regular">
+    <section className="py-10 px-24 font-helvetica-regular bg-white">
     <div className="flex w-full gap-4  items-center justify-between mb-10">
         <h1 className="text-5xl font-bold w-1/4 ">Tautan Pintas</h1>
         <div className="h-1 w-3/4   bg-primary-tealBlue"></div>

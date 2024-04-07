@@ -10,7 +10,7 @@ const Tentang = () => {
         target: target,
         offset:["start end","end start"]
     });
-    const value = useTransform(scrollYProgress, [0, 0.2], ["80%", "100%"]);
+    const value = useTransform(scrollYProgress, [0.05, 0.2], ["80%", "100%"]);
     const border = useTransform(scrollYProgress, [0, 0.2], ["16px", "0px"]);
     const opacity = useTransform(scrollYProgress, [0, 0.2], ["0.6", "1"]);
     const blur = useTransform(scrollYProgress, [0, 0.5], ["0", "10"]);
@@ -23,7 +23,7 @@ const Tentang = () => {
     });
 
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth bg-white'>
         <motion.section 
         style={{
             filter : `blur(${blurValue}px)`
