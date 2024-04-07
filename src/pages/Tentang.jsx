@@ -13,7 +13,7 @@ const Tentang = () => {
     const value = useTransform(scrollYProgress, [0, 0.2], ["80%", "100%"]);
     const border = useTransform(scrollYProgress, [0, 0.2], ["16px", "0px"]);
     const opacity = useTransform(scrollYProgress, [0, 0.2], ["0.6", "1"]);
-    const blur = useTransform(scrollYProgress, [0, 0.2], ["0", "10"]);
+    const blur = useTransform(scrollYProgress, [0, 0.5], ["0", "10"]);
     
     
   
@@ -30,10 +30,48 @@ const Tentang = () => {
          
         }}
         
-        className='h-screen w-4/5 mx-auto sticky    top-0 pt-20 font-helvetica-extraBold text-primary-tealBlue flex flex-col gap-4'>
-            <h1 className='text-7xl font-bold z-0  '>Tentang </h1>
-            <h1 className='text-7xl font-bold z-0 '>Eksekutif Mahasiswa</h1>
-            <h1 className='text-7xl font-bold z-0 '>Universitas Brawijaya 2024</h1>
+        className='h-screen w-4/5 mx-auto sticky    top-0 pt-20 font-helvetica-extraBold text-primary-tealBlue flex flex-col '>
+            <div className='overflow-hidden h-24 '>
+                <motion.h1 
+                initial={{
+                    y:100
+                }}
+                animate={{
+                    y:0
+                }}
+                transition={{
+                    duration:0.3
+                }}
+                className='text-7xl font-bold h-24  '>Tentang </motion.h1>
+            </div>
+            <div className='overflow-hidden h-24 '>
+            <motion.h1 
+            initial={{
+                y:100
+            }}
+            animate={{
+                y:0
+            }}
+            transition={{
+                duration:0.3,
+                delay:0.1
+            }}
+            className='text-7xl font-bold  h-24'>Eksekutif Mahasiswa</motion.h1>
+            </div>
+            <div className='overflow-hidden h-24 '>
+            <motion.h1 
+            initial={{
+                y:100
+            }}
+            animate={{
+                y:0
+            }}
+            transition={{
+                duration:0.3,
+                delay:0.2
+            }}
+            className='text-7xl font-bold h-24 '>Universitas Brawijaya 2024</motion.h1>
+            </div>
         </motion.section>
         <motion.section
         style={{
