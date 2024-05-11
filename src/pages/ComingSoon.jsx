@@ -3,7 +3,7 @@ import Logo from "../../public/Logo.png";
 import Planet from "../../public/Planet.png";
 const ComingSoon = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden ">
       <div className="h-screen w-full bg-black relative overflow-hidden">
         <div 
        

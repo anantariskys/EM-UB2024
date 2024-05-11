@@ -6,6 +6,7 @@ import {
     useMotionValueEvent,
 } from "framer-motion";
 import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const ProkerUnggulan = () => {
     const targetRef = useRef(null);
@@ -29,9 +30,9 @@ const ProkerUnggulan = () => {
             className="w-full relative overflow-hidden  flex flex-col justify-center items-center h-[calc(100vh+20vh)] bg-gradient-to-t from-black via-primary-tealBlue to-black gap-5  "
         >
             <h1 className="font-helvetica-extraBold text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary-skyBlue to-white text-balance w-4/5 text-center relative drop-shadow-2xl z-40">
-                PROGRAM KERJA UNGGULAN EM UB 2024
+                PROGRAM KERJA 6 MEGA BESAR EM UB 2024
             </h1>
-            <div
+            <Link to={'/proker'}><div
                 className="text-xl relative  group rounded-lg font-medium bg-transparent bg-primary-tealBlue text-primary-charcoalGray border-2 py-1 px-5 border-white z-20 
           hover:text-white duration-300  ease-in-out  overflow-hidden flex items-center gap-2 active:scale-95 active:duration-200"
             >
@@ -43,11 +44,12 @@ const ProkerUnggulan = () => {
                     className="text-white z-20 group-hover:translate-x-2  group-hover:delay-500 group-hover:text-primary-charcoalGray duration-300 ease-in-out  text-xl "
                 />
 
-                <div className="absolute   -translate-y-1/2 top-1/2 -left-5 duration-1000 skew-x-12 w-0 group-hover:w-[calc(100%+50px)] bg-white h-[calc(100%+20px)] bottom-0 z-0"></div>
+                <div className="absolute   -translate-y-1/2 top-1/2 -left-5 duration-1000 skew-x-12 w-0 group-hover:w-[calc(100%+50px)] bg-primary-white h-[calc(100%+20px)] bottom-0 z-0"></div>
             </div>
+            </Link>
 
-            <div className="w-full h-16 bg-white absolute -top-8 left-0 rounded-[100%] z-40"></div>
-            <div className="w-full h-16 bg-white absolute -bottom-8 left-0 rounded-[100%] z-40"></div>
+            <div className="w-full h-16 bg-primary-white absolute -top-8 left-0 rounded-[100%] z-40"></div>
+            <div className="w-full h-16 bg-primary-white absolute -bottom-8 left-0 rounded-[100%] z-40"></div>
 
             <div className="flex justify-center items-center gap-12 absolute  ">
                 <motion.div

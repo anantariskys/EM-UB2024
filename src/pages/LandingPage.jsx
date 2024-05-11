@@ -9,13 +9,15 @@ import NilaiDasarOrganisasi from "../components/sections/landingPage/NilaiDasarO
 import TautanPintas from "../components/sections/landingPage/TautanPintas";
 import HeroSection from "../components/sections/landingPage/HeroSection";
 import VisiMisi from "../components/sections/landingPage/VisiMisi";
+import Berita from "../components/sections/landingPage/Berita";
+
 
 const LandingPage = () => {
   
     return (
-        <div className="scroll-smooth bg-white" >
+        <div className="scroll-smooth bg-primary-white" >
             <HeroSection />
-            <section className="px-24 w-full flex flex-col py-10 justify-between bg-white">
+            <section className="px-24 w-full flex flex-col py-10 justify-between ">
                 <div className="w-3/5 font-helvetica-regular flex-col flex gap-10 text-primary-charcoalGray">
                     <h1 className="text-7xl font-bold">
                         EM UB 2024 Kabinet Cerita Kita
@@ -38,6 +40,7 @@ const LandingPage = () => {
 
             <ProkerUnggulan />
             <NilaiDasarOrganisasi />
+            <Berita/>
             <TautanPintas />
         </div>
     );

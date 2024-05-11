@@ -1,0 +1,10 @@
+ .splide__pagination {
+    position: absolute !important;
+    z-index: 50;
+  
+  }
+
+  .bg-paper{
+    background-image: url("https://www.transparenttextures.com/patterns/rice-paper-2.png");
+
+  }

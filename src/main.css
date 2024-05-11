@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Helvetica ExtraBold';
+  src: url('/public/HelveticaNowDisplay-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Regular';
+  src: url('/public/HelveticaNowDisplay-Regular.ttf') format('truetype');
+}
+
+
+

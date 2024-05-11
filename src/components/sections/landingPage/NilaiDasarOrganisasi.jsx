@@ -2,8 +2,9 @@ import React from "react";
 import Obyektif from "../../../assets/nilaiDasarOrganisasi/Obyektif.png";
 const NilaiDasarOrganisasi = () => {
     return (
-        <section className="px-24 mt-10 bg-white">
-            <div className="w-full bg-gradient-to-br from-primary-skyBlue mx-auto shadow-2xl p-8 rounded-xl to-white">
+        <section className=" mt-10 px-24 container mx-auto ">
+        
+            <div className="w-full  bg-gradient-to-br from-primary-skyBlue mx-auto shadow-2xl p-8 rounded-xl to-white">
                 <h1 className="font-helvetica-extraBold text-4xl text-transparent bg-clip-text bg-gradient-to-r  inline-block from-primary-charcoalGray to-primary-tealBlue mb-10 ">
                     Nilai Dasar Organisasi
                 </h1>
