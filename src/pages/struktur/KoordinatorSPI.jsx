@@ -6,7 +6,7 @@ import ProgramKerja from "../../components/sections/struktur/ProgramKerja";
 import Header from "../../components/sections/struktur/Header";
 import BPH from "../../components/sections/struktur/BPH";
 
-const KoordinatorPergerakan = () => {
+const KoordinatorSPI = () => {
   return (
     <div className="font-helvetica-regular bg-primary-white pb-20">
       <Header title={"SATUAN PENGENDALI INTERNAL"} />
@@ -26,4 +26,4 @@ const KoordinatorPergerakan = () => {
   );
 };
 
-export default KoordinatorPergerakan;
+export default KoordinatorSPI;

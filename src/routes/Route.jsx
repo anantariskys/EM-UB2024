@@ -11,6 +11,7 @@ import Alumni from "../pages/Alumni";
 import KoordinatorPengembangan from "../pages/struktur/KoordinatorPengembangan";
 import KoordinatorPergerakan from "../pages/struktur/KoordinatorPergerakan";
 import KoordinatorDJO from "../pages/struktur/KoordinatorDJO";
+import KoordinatorSPI from "../pages/struktur/KoordinatorSPI";
 
 
 const createRouter = createBrowserRouter([
@@ -99,6 +100,14 @@ const createRouter = createBrowserRouter([
         element: (
             <PageLayout>
                 <KoordinatorDJO/>
+            </PageLayout>
+        ),
+    },
+    {
+        path: "/struktur/satuan-pengendali-internal",
+        element: (
+            <PageLayout>
+                <KoordinatorSPI/>
             </PageLayout>
         ),
     },
