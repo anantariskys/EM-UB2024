@@ -41,7 +41,7 @@ const VisiMisi = () => {
     });
 
     return (
-        <section ref={progres} className="flex py-20  gap-10 px-24 bg-primary-white">
+        <section ref={progres} className="lg:flex py-20 hidden  gap-10 px-24 bg-primary-white">
             <div className="size-[10%] sticky top-[45vh] flex justify-center z-50  items-center">
                 <div className="top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 size-4/6 bg-primary-charcoalGray rounded-full absolute"></div>
                 <CircularProgressbar value={circularProgress} maxValue={100} />

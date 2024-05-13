@@ -25,7 +25,7 @@ const DetailBerita = () => {
 
     return (
         <div className="bg-primary-white font-helvetica-regular bg-paper">
-            <section className="h-[75vh]">
+            <section className="lg:h-[75vh] ">
                 <Splide
                     options={{
                         autoplay: true,
@@ -35,21 +35,21 @@ const DetailBerita = () => {
                         rewindSpeed: 500,
                     }}
                 >
-                    <SplideSlide className="h-[75vh]">
+                    <SplideSlide className="lg:h-[75vh] h-[25vh] ">
                         <img
                             src="https://source.unsplash.com/random/900×700/?food"
                             alt=""
                             className="h-full w-full object-cover"
                         />
                     </SplideSlide>
-                    <SplideSlide className="h-[75vh]">
+                    <SplideSlide className="lg:h-[75vh] h-[25vh] ">
                         <img
                             src="https://source.unsplash.com/random/900×700/?villain"
                             alt=""
                             className="h-full w-full object-cover"
                         />
                     </SplideSlide>
-                    <SplideSlide className="h-[75vh]">
+                    <SplideSlide className="lg:h-[75vh] h-[25vh] ">
                         <img
                             src="https://source.unsplash.com/random/900×700/?superhero"
                             alt=""
@@ -58,23 +58,23 @@ const DetailBerita = () => {
                     </SplideSlide>
                 </Splide>
             </section>
-            <section className="mx-auto container px-10 pb-20 ">
+            <section className="mx-auto container px-2 lg:px-10 pb-5 lg:pb-20 ">
                 <div className="w-full bg-gradient-to-b px-0.5 pb-0.5 from-primary-charcoalGray rounded-b-lg to-primary-tealBlue">
-                    <div className="bg-primary-white bg-paper w-full px-5 pb-5 rounded-b-lg">
+                    <div className="bg-primary-white bg-paper w-full lg:px-5 px-2 pb-2 lg:pb-5 rounded-b-lg">
                         <div className="w-full bg-gradient-to-b px-0.5 pb-0.5 from-primary-charcoalGray rounded-b-lg to-primary-tealBlue">
-                            <div className="bg-primary-white bg-paper w-full  rounded-b-lg px-20">
-                                <div className="shadow-2xl w-full -mt-10 relative z-30 p-12 bg-primary-white border border-primary-charcoalGray border-opacity-15">
+                            <div className="bg-primary-white bg-paper w-full  rounded-b-lg px-2 lg:px-20">
+                                <div className="shadow-2xl w-full -mt-8 lg:-mt-10 relative z-30 p-4 lg:p-12 bg-primary-white border border-primary-charcoalGray border-opacity-15">
                                     <div className="w-fit px-3 py-1.5 text-xs rounded-2xl mx-auto bg-primary-tealBlue text-slate-100">
                                         LUGRI
                                     </div>
-                                    <h1 className="text-5xl font-helvetica-extraBold w-5/6 mx-auto text-center mt-3 text-primary-charcoalGray">
+                                    <h1 className="lg:text-5xl text-2xl font-helvetica-extraBold w-full lg:w-5/6 mx-auto text-center mt-3 text-primary-charcoalGray">
                                         Judul Proker Judul Proker Judul Proker
                                         Judul Proker
                                     </h1>
                                     <p className="w-fit mx-auto mt-3 text-primary-tealBlue text-xl">
                                         20 April 2024
                                     </p>
-                                    <main className="flex flex-col gap-5 px-36 text-primary-charcoalGray">
+                                    <main className="flex flex-col gap-2 lg:gap-5 px-5 lg:px-36 text-primary-charcoalGray">
                                         <p>
                                             Lorem ipsum dolor sit amet,
                                             consectetur adipiscing elit.
@@ -141,11 +141,11 @@ const DetailBerita = () => {
                                         </p>
                                     </main>
                                 </div>
-                                <div className="py-10 ">
-                                    <h3 className="text-2xl font-helvetica-extraBold text-primary-tealBlue">
+                                <div className="py-5 lg:py-10 ">
+                                    <h3 className="lg:text-2xl text-lg font-helvetica-extraBold text-primary-tealBlue">
                                         BERITA LAINNYA
                                     </h3>
-                                    <div className="grid grid-cols-3 grid-rows-1 gap-10 mt-5">
+                                    <div className="grid grid-cols-3 grid-rows-1 gap-1 lg:gap-10 mt-5">
                                         {
                                             dummy.map((item,index)=>(
                                                 <Card img={item.img} key={index} title={item.title} time={item.date} />

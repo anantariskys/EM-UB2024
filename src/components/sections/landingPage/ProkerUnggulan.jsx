@@ -27,9 +27,9 @@ const ProkerUnggulan = () => {
     return (
         <motion.section
             ref={targetRef}
-            className="w-full relative overflow-hidden  flex flex-col justify-center items-center h-[calc(100vh+20vh)] bg-gradient-to-t from-black via-primary-tealBlue to-black gap-5  "
+            className="w-full relative overflow-hidden  flex flex-col justify-center items-center h-screen lg:h-[calc(100vh+20vh)] bg-gradient-to-t from-black via-primary-tealBlue to-black gap-5  "
         >
-            <h1 className="font-helvetica-extraBold text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary-skyBlue to-white text-balance w-4/5 text-center relative drop-shadow-2xl z-40">
+            <h1 className="font-helvetica-extraBold text-2xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary-skyBlue to-white text-balance w-4/5 text-center relative drop-shadow-2xl z-40">
                 PROGRAM KERJA 6 MEGA BESAR EM UB 2024
             </h1>
             <Link to={'/proker'}><div
@@ -51,12 +51,12 @@ const ProkerUnggulan = () => {
             <div className="w-full h-16 bg-primary-white absolute -top-8 left-0 rounded-[100%] z-40"></div>
             <div className="w-full h-16 bg-primary-white absolute -bottom-8 left-0 rounded-[100%] z-40"></div>
 
-            <div className="flex justify-center items-center gap-12 absolute  ">
+            <div className="flex justify-center items-center gap-4 lg:gap-12 absolute  ">
                 <motion.div
                     style={{
                         top: value1,
                     }}
-                    className="flex flex-col gap-5 w-[16%] relative ease-in-out"
+                    className="lg:flex  hidden flex-col gap-5 lg:w-[16%] w-[25%] relative ease-in-out"
                 >
                     <img
                         draggable="false"
@@ -98,7 +98,7 @@ const ProkerUnggulan = () => {
                     style={{
                         bottom: value2,
                     }}
-                    className="flex flex-col gap-5 w-[16%] relative ease-in-out"
+                    className="lg:flex  hidden flex-col gap-5 lg:w-[16%] w-[25%] relative ease-in-out"
                 >
                     <img
                         draggable="false"
@@ -147,7 +147,7 @@ const ProkerUnggulan = () => {
                     style={{
                         top: value3,
                     }}
-                    className="flex flex-col gap-5 w-[16%] relative ease-in-out"
+                    className="flex flex-col gap-5 lg:w-[16%] w-[25%] relative ease-in-out"
                 >
                     <img
                         draggable="false"
@@ -189,7 +189,7 @@ const ProkerUnggulan = () => {
                     style={{
                         bottom: value4,
                     }}
-                    className="flex flex-col gap-5 w-[16%] relative ease-in-out"
+                    className="flex flex-col gap-5 lg:w-[16%] w-[25%] relative ease-in-out"
                 >
                     <img
                         draggable="false"
@@ -238,7 +238,7 @@ const ProkerUnggulan = () => {
                     style={{
                         top: value5,
                     }}
-                    className="flex flex-col gap-5 w-[16%] relative ease-in-out"
+                    className="flex flex-col gap-5 lg:w-[16%] w-[25%] relative ease-in-out"
                 >
                     <img
                         draggable="false"

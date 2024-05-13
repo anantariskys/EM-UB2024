@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import right from "../../../src/assets/ProkerEM/heroRight.png";
 import left from "../../../src/assets/ProkerEM/heroLeft.png";
 import { Pengembangan } from "../../data/data";
@@ -6,66 +6,62 @@ import CardKementrian from "../../components/CardKementrian";
 import KementrianHeader from "../../components/sections/struktur/KementrianHeader";
 import ProgramKerja from "../../components/sections/struktur/ProgramKerja";
 import BPH from "../../components/sections/struktur/BPH";
-
+import Header from "../../components/sections/struktur/Header";
+import { useState } from "react";
+import { moveToTop } from "../../utils/util";
 const KoordinatorPengembangan = () => {
-   
+    const [isActive, setIsActive] = useState(false);
+    const refs = useRef([]);
+  
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
+  
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      const showFixedDivPosition = 500;
+      setIsActive(scrollPosition >= showFixedDivPosition);
+    };
+  
+    const scrollToSection = (index) => {
+      if (refs.current[index]) {
+        refs.current[index].scrollIntoView({ behavior: "smooth"});
+      }
+    };
+
 
     return (
-        <div className="font-helvetica-regular bg-primary-white pb-20">
-            <section className="w-full relative">
-                <img
-                    src={right}
-                    className="absolute top-0 right-0 w-[10%] aspect-auto"
-                    alt="img"
-                    draggable="false"
-                />
-                <img
-                    src={left}
-                    className="absolute top-0 left-0 w-[10%] aspect-auto"
-                    alt="img"
-                    draggable="false"
-                />
-                <div className="container mx-auto px-24 h-[85vh] flex items-center ">
-                    <div className="w-1/2 font-helvetica-extraBold text-4xl">
-                        <h1 className=" text-primary-charcoalGray">
-                            KEMENTRIAN KOORDINATOR PENGEMBANGAN
-                        </h1>
-                        <h1 className="text-primary-tealBlue">EM UB 2024</h1>
-                    </div>
-                    <div className="flex gap-2 w-1/2 self-end">
-                        <div className="w-1/2">
-                            <div className="w-full aspect-[9/13] rounded-lg bg-primary-tealBlue"></div>
-                            <h3 className="text-xl text-primary-tealBlue font-helvetica-extraBold text">
-                                Pinkhan Azarin Rakhmawaty
-                            </h3>
-                            <p className="text-base text-primary-charcoalGray text-opacity-70">
-                                Menteri Koordinator Pengambangan
-                            </p>
-                        </div>
-                        <div className="w-1/2">
-                            <div className="w-full aspect-[9/13] rounded-lg bg-primary-tealBlue"></div>
-                            <h3 className="text-xl text-primary-tealBlue font-helvetica-extraBold text">
-                                Andini Tasya Putri Pratama
-                            </h3>
-                            <p className="text-base text-primary-charcoalGray text-opacity-70">
-                                Sekertaris Kementrian Koordinator Pengembangan
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="mx-auto px-24 container grid gap-5 py-10 grid-cols-4 grid-rows-1">
-                {Pengembangan.map((item, index) => (
-                   <CardKementrian name={item.nama} key={index} />
+        <div className="font-helvetica-regular bg-white pb-20">
+            <Header bpi={Pengembangan[0].bpi} title={"KEMENTRIAN KOORDINATOR PENGEMBANGAN"}/>
+
+            <section className="mx-auto px-24 container flex justify-center  gap-5 py-10">
+                {Pengembangan[0].kementerian.map((item, index) => (
+                    <CardKementrian
+                    name={item.nama}
+                    key={index}
+                    onClick={() => scrollToSection(index)}
+                  />
                 ))}
             </section>
-            {Pengembangan.map((item, index) => (
+            {Pengembangan[0].kementerian.map((item, index) => (
                 <>
-                   <KementrianHeader nama={item.nama} key={index}  />
+                    <KementrianHeader
+              ref={(el) => (refs.current[index] = el)}
+              image={item.image}
+              nama={item.nama}
+              key={index}
+            />
                   <BPH list={item}/>
                     <ProgramKerja list={item} key={index} />
                 </>
             ))}
+               <div
+        onClick={() => moveToTop()}
+        className={`${isActive ? "visible opacity-100" : "invisible opacity-0"} duration-300 ease-in-out w-10 lg:w-16 border-2 border-primary-charcoalGray aspect-square rounded-full bg-primary-tealBlue fixed bottom-10 right-10`}
+      ></div>
         </div>
     );
 };

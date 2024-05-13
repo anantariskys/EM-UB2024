@@ -11,10 +11,10 @@ const Card = ({img,time,title}) => {
                     draggable="false"
                 />
             </div>
-            <p className="text-sm font-bold text-slate-500 mt-2">
+            <p className="lg:text-sm text-xs font-bold text-slate-500 mt-2">
                {time}
             </p>
-            <h1 className="text-xl font-extrabold line-clamp-2 ">
+            <h1 className="lg:text-xl  text-sm font-extrabold line-clamp-2 ">
                 {title}
             </h1>
         </div>

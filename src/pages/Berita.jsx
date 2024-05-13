@@ -1,8 +1,11 @@
 import React from 'react'
-
+import {DJO,PPM,Pengembangan, Pergerakan,SPI} from "../data/data.js"
 const Berita = () => {
   return (
-    <div>Berita</div>
+    <div>
+      
+
+    </div>
   )
 }
 

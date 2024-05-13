@@ -7,16 +7,19 @@ const Navbar = () => {
 
 
     return (
-        <nav className="flex px-24 py-3 justify-between shadow-lg sticky top-0   z-[100] relative items-center bg-primary-white">
-            <img src={Logo} className="h-16" draggable="false" alt="logo" />
-            <ul className="flex gap-10 font-helvetica-regular items-center h-full text-primary-navbarText ">
+        <nav className="flex px-3 lg:px-24 py-3 justify-between shadow-lg sticky top-0   z-[100]  items-center bg-primary-white">
+            <img src={Logo} className="lg:h-20  h-10" draggable="false" alt="logo" />
+            <ul className="lg:flex hidden  gap-10 font-helvetica-regular items-center h-full text-primary-navbarText ">
                 <Link to={'/'} href="" className="relative group">
                     <li className="text-xl font-medium">Beranda</li>
                     <div className={`${location.pathname==="/"?"w-full":"transition-all duration-500 group-hover:w-full group-hover:left-0 group-hover:origin-left right-0 origin-right w-0"} absolute bottom-0 h-0.5 bg-primary-tealBlue `}></div>
                 </Link>
+                <Link to={'/berita'}>
                 <a href="" className="relative group">
                     <li className="text-xl font-medium ">Berita</li>
                     <div className={`${location.pathname==="/berita"?"w-full":"transition-all duration-500 group-hover:w-full group-hover:left-0 group-hover:origin-left right-0 origin-right w-0"} absolute bottom-0 h-0.5 bg-primary-tealBlue `}></div>                </a>
+                    </Link>
+
                 <Link to={'/tentang'} href="" className="relative group">
                     <li className="text-xl font-medium ">Tentang</li>
                     <div className={`${location.pathname==="/tentang"?"w-full":"transition-all duration-500 group-hover:w-full group-hover:left-0 group-hover:origin-left right-0 origin-right w-0"} absolute bottom-0 h-0.5 bg-primary-tealBlue `}></div>                </Link>

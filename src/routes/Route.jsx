@@ -12,6 +12,7 @@ import KoordinatorPengembangan from "../pages/struktur/KoordinatorPengembangan";
 import KoordinatorPergerakan from "../pages/struktur/KoordinatorPergerakan";
 import KoordinatorDJO from "../pages/struktur/KoordinatorDJO";
 import KoordinatorSPI from "../pages/struktur/KoordinatorSPI";
+import KoordinatorPPM from "../pages/struktur/KoordinatorPPM";
 
 
 const createRouter = createBrowserRouter([
@@ -80,7 +81,7 @@ const createRouter = createBrowserRouter([
         ),
     },
     {
-        path: "/struktur/koordinator-pengembangan",
+        path: "/struktur/pengembangan",
         element: (
             <PageLayout>
                 <KoordinatorPengembangan/>
@@ -88,7 +89,7 @@ const createRouter = createBrowserRouter([
         ),
     },
     {
-        path: "/struktur/koordinator-pergerakan",
+        path: "/struktur/pergerakan",
         element: (
             <PageLayout>
                 <KoordinatorPergerakan/>
@@ -104,10 +105,18 @@ const createRouter = createBrowserRouter([
         ),
     },
     {
-        path: "/struktur/satuan-pengendali-internal",
+        path: "/struktur/spi",
         element: (
             <PageLayout>
                 <KoordinatorSPI/>
+            </PageLayout>
+        ),
+    },
+    {
+        path: "/struktur/ppm",
+        element: (
+            <PageLayout>
+                <KoordinatorPPM/>
             </PageLayout>
         ),
     },

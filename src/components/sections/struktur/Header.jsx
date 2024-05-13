@@ -1,7 +1,7 @@
 import React from 'react'
 import right from "../../../../src/assets/ProkerEM/heroRight.png";
 import left from "../../../../src/assets/ProkerEM/heroLeft.png";
-const Header = ({title}) => {
+const Header = ({title,bpi}) => {
   return (
     <section className="w-full relative">
                 <img
@@ -24,24 +24,21 @@ const Header = ({title}) => {
                         <h1 className="text-primary-tealBlue">EM UB 2024</h1>
                     </div>
                     <div className="flex gap-2 w-1/2 self-end">
-                        <div className="w-1/2">
-                            <div className="w-full aspect-[9/13] rounded-lg bg-primary-tealBlue"></div>
+                        {
+                            bpi.map((item,index)=>(
+                        <div className="w-1/2" key={index}>
+                            <img src={item.image} className="w-full aspect-[9/13] rounded-lg object-contain "/>
                             <h3 className="text-xl text-primary-tealBlue font-helvetica-extraBold text">
-                                Pinkhan Azarin Rakhmawaty
+                                {item.nama}
                             </h3>
                             <p className="text-base text-primary-charcoalGray text-opacity-70">
-                                Menteri Koordinator Pengambangan
+                                {item.jabatan}
                             </p>
                         </div>
-                        <div className="w-1/2">
-                            <div className="w-full aspect-[9/13] rounded-lg bg-primary-tealBlue"></div>
-                            <h3 className="text-xl text-primary-tealBlue font-helvetica-extraBold text">
-                                Andini Tasya Putri Pratama
-                            </h3>
-                            <p className="text-base text-primary-charcoalGray text-opacity-70">
-                                Sekertaris Kementrian Koordinator Pengembangan
-                            </p>
-                        </div>
+
+                            ))
+                        }
+                     
                     </div>
                 </div>
             </section>

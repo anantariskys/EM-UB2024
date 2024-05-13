@@ -1,5 +1,5 @@
 
-   #hero .splide__slide:not(.is-active) img {
+   #hero .splide__slide:not(.is-active) div {
     scale: 90%;
     z-index: 0;
     transition-duration: 0.2s;
@@ -10,7 +10,7 @@
  
   }
 
-  #hero .splide__slide.is-active img {
+  #hero .splide__slide.is-active div {
     scale: 100%;
     z-index: 10;
     transition-duration: 0.2s;
@@ -36,9 +36,5 @@
   
   }
 
-  /* .splide__pagination {
-    position: absolute !important;
-    bottom: 30px ;
-  
-  } */
+ 
 

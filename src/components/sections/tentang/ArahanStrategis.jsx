@@ -55,22 +55,22 @@ const ArahanStrategis = () => {
     ];
 
     return (
-        <section className="container mx-auto px-24 py-10">
-            <div className="flex w-full gap-5  items-end justify-start mb-10">
-                <div className="w-full h-1 bg-gradient-to-r from-primary-skyBlue to-primary-tealBlue"></div>
-                <h1 className="text-primary-charcoalGray text-5xl font-black  font-helvetica-extraBold w-fit whitespace-nowrap ">
+        <section className="container mx-auto px-4 lg:px-24 py-10">
+            <div className="flex w-full lg:gap-5 gap-2  items-end justify-start mb-10">
+                <div className="w-full h-0.5 lg:h-1 bg-gradient-to-r from-primary-skyBlue to-primary-tealBlue"></div>
+                <h1 className="text-primary-charcoalGray text-2xl lg:text-5xl font-black  font-helvetica-extraBold w-fit whitespace-nowrap ">
                     Arahan Strategis
                 </h1>
             </div>
             <Collapse data={data[0].desc}>{data[0].title}</Collapse>
-            <div className="flex mt-5 gap-5">
-                <div className="w-1/2 flex flex-col gap-5">
-                    <Collapse data={data[1].desc}>{data[1].title}</Collapse>
-                    <Collapse data={data[2].desc}>{data[2].title}</Collapse>
+            <div className="flex flex-col lg:flex-row mt-5 gap-5">
+                <div className="lg:w-1/2 w-full flex flex-col gap-5">
+                    <Collapse bg="bg-[#2D9596]" data={data[1].desc}>{data[1].title}</Collapse>
+                    <Collapse  data={data[2].desc}>{data[2].title}</Collapse>
                 </div>
-                <div className="w-1/2 flex flex-col gap-5">
-                    <Collapse data={data[3].desc}>{data[3].title}</Collapse>
-                    <Collapse data={data[4].desc}>{data[4].title}</Collapse>
+                <div className="lg:w-1/2 w-full flex flex-col gap-5">
+                    <Collapse bg="bg-[#628E90]" data={data[3].desc}>{data[3].title}</Collapse>
+                    <Collapse bg="bg-[#408CA5]" data={data[4].desc}>{data[4].title}</Collapse>
                 </div>
             </div>
         </section>

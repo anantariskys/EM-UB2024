@@ -1,21 +1,17 @@
-import React from 'react'
+import React, { forwardRef } from 'react';
 
-const KementrianHeader = ({nama}) => {
+const KementrianHeader = forwardRef(({ nama, image }, ref) => {
   return (
-    <section className="container mx-auto px-24 py-5">
-    <div className="flex justify-center items-center gap-5">
+    <section ref={ref} className="container mx-auto px-24 py-5">
+      <div className="flex justify-center items-center gap-5">
         <div className="w-1/2 font-helvetica-extraBold text-4xl">
-            <h1 className=" text-primary-charcoalGray">
-                KEMENTRIAN {nama}
-            </h1>
-            <h1 className="text-primary-tealBlue">
-                EM UB 2024
-            </h1>
+          <h1 className=" text-primary-charcoalGray"> {nama} </h1>
+          <h1 className="text-primary-tealBlue"> EM UB 2024 </h1>
         </div>
-        <div className="w-1/6 bg-green-400 aspect-square rounded-lg"></div>
-    </div>
-</section>
-  )
-}
+        <img src={image} className="w-1/6 object-contain aspect-square rounded-lg" />
+      </div>
+    </section>
+  );
+});
 
-export default KementrianHeader
+export default KementrianHeader;
