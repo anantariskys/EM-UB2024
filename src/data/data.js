@@ -1,89 +1,132 @@
 // SPI
 // Gambar SPI
-import PARO_BPH_1 from "../assets/PARO_BPH_1.png";
-import PARO_BPH_2 from "../assets/PARO_BPH_2.png";
-import PARO_BPH_3 from "../assets/PARO_BPH_3.png";
-import SETKAB_BPH_1 from "../assets/SETKAB_BPH_1.png";
-import SETKAB_BPH_2 from "../assets/SETKAB_BPH_2.png";
-import BENKAB_BPH_1 from "../assets/BENKAB_BPH_1.png";
-import BENKAB_BPH_2 from "../assets/BENKAB_BPH_2.png";
+import SPI_BPI_1 from "../assets/Struktur/Petinggi/SPI/SPI_BPI_1.png";
+import SPI_BPI_2 from "../assets/Struktur/Petinggi/SPI/SPI_BPI_1.png";
+import PARO_BPH_1 from "../assets/Struktur/Petinggi/SPI/PARO_BPH_1.png";
+import PARO_BPH_2 from "../assets/Struktur/Petinggi/SPI/PARO_BPH_2.png";
+import PARO_BPH_3 from "../assets/Struktur/Petinggi/SPI/PARO_BPH_3.png";
+import SETKAB_BPH_1 from "../assets/Struktur/Petinggi/SPI/SETKAB_BPH_1.png";
+import SETKAB_BPH_2 from "../assets/Struktur/Petinggi/SPI/SETKAB_BPH_2.png";
+import BENKAB_BPH_1 from "../assets/Struktur/Petinggi/SPI/BENKAB_BPH_1.png";
+import BENKAB_BPH_2 from "../assets/Struktur/Petinggi/SPI/BENKAB_BPH_2.png";
+import PARO from "../assets/Struktur/Logo/PARO.svg";
+import SETKAB from "../assets/Struktur/Logo/SETKAB.svg";
+import BENKAB from "../assets/Struktur/Logo/BENKAB.svg";
 // Gambar SPI
 
 //Pengembangan
 //Gambar Pengembangan
-import PSDM_BPH_1 from "../assets/PSDM_BPH_1.png";
-import PSDM_BPH_2 from "../assets/PSDM_BPH_2.png";
-import PSDM_BPH_3 from "../assets/PSDM_BPH_3.png";
-import PSDM_BPH_4 from "../assets/PSDM_BPH_4.png";
-import RINOYA_BPH_1 from "../assets/RINOYA_BPH_1.png";
-import RINOYA_BPH_2 from "../assets/RINOYA_BPH_2.png";
-import RINOYA_BPH_3 from "../assets/RINOYA_BPH_3.png";
-import RINOYA_BPH_4 from "../assets/RINOYA_BPH_4.png";
-import SENORA_BPH_1 from "../assets/SENORA_BPH_1.png";
-import SENORA_BPH_2 from "../assets/SENORA_BPH_2.png";
-import SENORA_BPH_3 from "../assets/SENORA_BPH_3.png";
-import SENORA_BPH_4 from "../assets/SENORA_BPH_4.png";
-import BUMM_BPH_1 from "../assets/BUMM_BPH_1.png";
-import BUMM_BPH_2 from "../assets/BUMM_BPH_2.png";
-import BUMM_BPH_3 from "../assets/BUMM_BPH_3.png";
-import BUMM_BPH_4 from "../assets/SENORA_BPH_4.png";
+import PENGEMBANGAN_BPI_1 from "../assets/Struktur/Petinggi/Pengembangan/Pengembangan_BPI_1.png";
+import PENGEMBANGAN_BPI_2 from "../assets/Struktur/Petinggi/Pengembangan/Pengembangan_BPI_2.png";
+import PSDM_BPH_1 from "../assets/Struktur/Petinggi/Pengembangan/PSDM_BPH_1.png";
+import PSDM_BPH_2 from "../assets/Struktur/Petinggi/Pengembangan/PSDM_BPH_2.png";
+import PSDM_BPH_3 from "../assets/Struktur/Petinggi/Pengembangan/PSDM_BPH_3.png";
+import PSDM_BPH_4 from "../assets/Struktur/Petinggi/Pengembangan/PSDM_BPH_4.png";
+import RINOYA_BPH_1 from "../assets/Struktur/Petinggi/Pengembangan/RINOYA_BPH_1.png";
+import RINOYA_BPH_2 from "../assets/Struktur/Petinggi/Pengembangan/RINOYA_BPH_2.png";
+import RINOYA_BPH_3 from "../assets/Struktur/Petinggi/Pengembangan/RINOYA_BPH_3.png";
+import RINOYA_BPH_4 from "../assets/Struktur/Petinggi/Pengembangan/RINOYA_BPH_4.png";
+import SENORA_BPH_1 from "../assets/Struktur/Petinggi/Pengembangan/SENORA_BPH_1.png";
+import SENORA_BPH_2 from "../assets/Struktur/Petinggi/Pengembangan/SENORA_BPH_2.png";
+import SENORA_BPH_3 from "../assets/Struktur/Petinggi/Pengembangan/SENORA_BPH_3.png";
+import SENORA_BPH_4 from "../assets/Struktur/Petinggi/Pengembangan/SENORA_BPH_4.png";
+import BUMM_BPH_1 from "../assets/Struktur/Petinggi/Pengembangan/BUMM_BPH_1.png";
+import BUMM_BPH_2 from "../assets/Struktur/Petinggi/Pengembangan/BUMM_BPH_2.png";
+import BUMM_BPH_3 from "../assets/Struktur/Petinggi/Pengembangan/BUMM_BPH_3.png";
+import BUMM_BPH_4 from "../assets/Struktur/Petinggi/Pengembangan/SENORA_BPH_4.png";
+import PSDM from "../assets/Struktur/Logo/PSDM.svg";
+import RINOYA from "../assets/Struktur/Logo/RINOYA.svg";
+import SENORA from "../assets/Struktur/Logo/SENORA.svg";
+import BUMM from "../assets/Struktur/Logo/BUMM.svg";
 //Gambar Pengembangan
 
 //Pergerakan
 //Gambar Pergerakan
-import ADVOKASI_BPH_1 from "../assets/ADVOKASI_BPH_1.png";
-import ADVOKASI_BPH_2 from "../assets/ADVOKASI_BPH_2.png";
-import ADVOKASI_BPH_3 from "../assets/ADVOKASI_BPH_3.png";
-import ADVOKASI_BPH_4 from "../assets/ADVOKASI_BPH_4.png";
-import AKSPRO_BPH_1 from "../assets/AKSPRO_BPH_1.png";
-import AKSPRO_BPH_2 from "../assets/AKSPRO_BPH_2.png";
-import AKSPRO_BPH_3 from "../assets/AKSPRO_BPH_3.png";
-import AKSPRO_BPH_4 from "../assets/AKSPRO_BPH_4.png";
-import KPI_BPH_1 from "../assets/KPI_BPH_1.png";
-import KPI_BPH_2 from "../assets/KPI_BPH_2.png";
-import KPI_BPH_3 from "../assets/KPI_BPH_3.png";
-import KPI_BPH_4 from "../assets/KPI_BPH_4.png";
-import PPP_BPH_1 from "../assets/PPP_BPH_1.png";
-import PPP_BPH_2 from "../assets/PPP_BPH_2.png";
-import PPP_BPH_3 from "../assets/PPP_BPH_3.png";
-import PPP_BPH_4 from "../assets/PPP_BPH_4.png";
+import PERGERAKAN_BPI_1 from "../assets/Struktur/Petinggi/Pergerakan/PERGERAKAN_BPI_1.png";
+import PERGERAKAN_BPI_2 from "../assets/Struktur/Petinggi/Pergerakan/PERGERAKAN_BPI_2.png";
+import ADVOKASI_BPH_1 from "../assets/Struktur/Petinggi/Pergerakan/ADVOKASI_BPH_1.png";
+import ADVOKASI_BPH_2 from "../assets/Struktur/Petinggi/Pergerakan/ADVOKASI_BPH_2.png";
+import ADVOKASI_BPH_3 from "../assets/Struktur/Petinggi/Pergerakan/ADVOKASI_BPH_3.png";
+import ADVOKASI_BPH_4 from "../assets/Struktur/Petinggi/Pergerakan/ADVOKASI_BPH_4.png";
+import AKSPRO_BPH_1 from "../assets/Struktur/Petinggi/Pergerakan/AKSPRO_BPH_1.png";
+import AKSPRO_BPH_2 from "../assets/Struktur/Petinggi/Pergerakan/AKSPRO_BPH_2.png";
+import AKSPRO_BPH_3 from "../assets/Struktur/Petinggi/Pergerakan/AKSPRO_BPH_3.png";
+import AKSPRO_BPH_4 from "../assets/Struktur/Petinggi/Pergerakan/AKSPRO_BPH_4.png";
+import KPI_BPH_1 from "../assets/Struktur/Petinggi/Pergerakan/KPI_BPH_1.png";
+import KPI_BPH_2 from "../assets/Struktur/Petinggi/Pergerakan/KPI_BPH_2.png";
+import KPI_BPH_3 from "../assets/Struktur/Petinggi/Pergerakan/KPI_BPH_3.png";
+import KPI_BPH_4 from "../assets/Struktur/Petinggi/Pergerakan/KPI_BPH_4.png";
+import PPP_BPH_1 from "../assets/Struktur/Petinggi/Pergerakan/PPP_BPH_1.png";
+import PPP_BPH_2 from "../assets/Struktur/Petinggi/Pergerakan/PPP_BPH_2.png";
+import PPP_BPH_3 from "../assets/Struktur/Petinggi/Pergerakan/PPP_BPH_3.png";
+import PPP_BPH_4 from "../assets/Struktur/Petinggi/Pergerakan/PPP_BPH_4.png";
+import ADVOKASI from "../assets/Struktur/Logo/ADVOKASI.svg";
+import AKSPRO from "../assets/Struktur/Logo/AKSPRO.svg";
+import KPI from "../assets/Struktur/Logo/KPI.svg";
+import PPP from "../assets/Struktur/Logo/P3.svg";
 //Gambar Pergerakan
 
 //PPM
 //Gambar PPM
 // import SOSMA_BPH_1 from "../assets/SOSMA_BPH_1.png";
-import SOSMA_BPH_2 from "../assets/SOSMA_BPH_2.png";
+import PPM_BPI_1 from "../assets/Struktur/Petinggi/PPM/PPM_BPI_1.png";
+import PPM_BPI_2 from "../assets/Struktur/Petinggi/PPM/PPM_BPI_2.png";
+import SOSMA_BPH_2 from "../assets/Struktur/Petinggi/PPM/SOSMA_BPH_2.png";
 // import SOSMA_BPH_3 from "../assets/SOSMA_BPH_3.png";
-import SOSMA_BPH_4 from "../assets/SOSMA_BPH_4.png";
+import SOSMA_BPH_4 from "../assets/Struktur/Petinggi/PPM/SOSMA_BPH_4.png";
 // import LH_BPH_1 from "../assets/LH_BPH_1.png";
-import LH_BPH_2 from "../assets/LH_BPH_2.png";
-import LH_BPH_3 from "../assets/LH_BPH_3.png";
-import LH_BPH_4 from "../assets/LH_BPH_4.png";
-import BM_BPH_1 from "../assets/BM_BPH_1.png";
-import BM_BPH_2 from "../assets/BM_BPH_2.png";
+import LH_BPH_2 from "../assets/Struktur/Petinggi/PPM/LH_BPH_2.png";
+import LH_BPH_3 from "../assets/Struktur/Petinggi/PPM/LH_BPH_3.png";
+import LH_BPH_4 from "../assets/Struktur/Petinggi/PPM/LH_BPH_4.png";
+import BM_BPH_1 from "../assets/Struktur/Petinggi/PPM/BM_BPH_1.png";
+import BM_BPH_2 from "../assets/Struktur/Petinggi/PPM/BM_BPH_2.png";
+import SOSMA from "../assets/Struktur/Logo/SOSMA.svg";
+import LH from "../assets/Struktur/Logo/LH.svg";
+import BM from "../assets/Struktur/Logo/BM.svg";
 //Gambar PPM
 
 //DJO
 //Gambar DJO
-import DAGRI_BPH_1 from "../assets/DAGRI_BPH_1.png";
-import DAGRI_BPH_2 from "../assets/DAGRI_BPH_2.png";
-import DAGRI_BPH_3 from "../assets/DAGRI_BPH_3.png";
-import DAGRI_BPH_4 from "../assets/DAGRI_BPH_4.png";
-import LUGRI_BPH_1 from "../assets/LUGRI_BPH_1.png";
-import LUGRI_BPH_2 from "../assets/LUGRI_BPH_2.png";
-import LUGRI_BPH_3 from "../assets/LUGRI_BPH_3.png";
-import LUGRI_BPH_4 from "../assets/LUGRI_BPH_4.png";
-import KOMINFO_BPH_1 from "../assets/KOMINFO_BPH_1.png";
-import KOMINFO_BPH_2 from "../assets/KOMINFO_BPH_2.png";
-import KOMINFO_BPH_3 from "../assets/KOMINFO_BPH_3.png";
-import KOMINFO_BPH_4 from "../assets/KOMINFO_BPH_4.png";
-import KOMINFO_BPH_5 from "../assets/KOMINFO_BPH_5.png";
+import DJO_BPI_1 from "../assets/Struktur/Petinggi/DJO/DJO_BPI_1.png";
+import DJO_BPI_2 from "../assets/Struktur/Petinggi/DJO/DJO_BPI_2.png";
+import DAGRI_BPH_1 from "../assets/Struktur/Petinggi/DJO/DAGRI_BPH_1.png";
+import DAGRI_BPH_2 from "../assets/Struktur/Petinggi/DJO/DAGRI_BPH_2.png";
+import DAGRI_BPH_3 from "../assets/Struktur/Petinggi/DJO/DAGRI_BPH_3.png";
+import DAGRI_BPH_4 from "../assets/Struktur/Petinggi/DJO/DAGRI_BPH_4.png";
+import LUGRI_BPH_1 from "../assets/Struktur/Petinggi/DJO/LUGRI_BPH_1.png";
+import LUGRI_BPH_2 from "../assets/Struktur/Petinggi/DJO/LUGRI_BPH_2.png";
+import LUGRI_BPH_3 from "../assets/Struktur/Petinggi/DJO/LUGRI_BPH_3.png";
+import LUGRI_BPH_4 from "../assets/Struktur/Petinggi/DJO/LUGRI_BPH_4.png";
+import KOMINFO_BPH_1 from "../assets/Struktur/Petinggi/DJO/KOMINFO_BPH_1.png";
+import KOMINFO_BPH_2 from "../assets/Struktur/Petinggi/DJO/KOMINFO_BPH_2.png";
+import KOMINFO_BPH_3 from "../assets/Struktur/Petinggi/DJO/KOMINFO_BPH_3.png";
+import KOMINFO_BPH_4 from "../assets/Struktur/Petinggi/DJO/KOMINFO_BPH_4.png";
+import KOMINFO_BPH_5 from "../assets/Struktur/Petinggi/DJO/KOMINFO_BPH_5.png";
+import DAGRI from "../assets/Struktur/Logo/DAGRI.svg";
+import LUGRI from "../assets/Struktur/Logo/LUGRI.svg";
+// import KOMINFO from "../assets/Struktur/Logo/KOMINFO.svg";
 //Gambar DJO
+
 export const SPI = [
   {
+    nama: "SATUAN PENGENDALI INTERNAL",
+    bpi: [
+      {
+        nama: "Siti Nufika Rahma",
+        jabatan: "Kepala Satuan Pengendali Internal",
+        image: { SPI_BPI_1 },
+      },
+      {
+        nama: "Gumilang Lintang",
+        jabatan: "Wakil Kepala Satuan Pengendali Internal",
+        image: { SPI_BPI_2 },
+      },
+    ],
+  },
+  {
     nama: "PENDAYAGUNAAN APARATUR DAN REFORMASI ORGANISASI",
-    image: "",
-    desc: "",
+    image: { PARO },
+    desc: "Pendayagunaan Aparatur dan Reformasi Ogranisasi siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Akbar Gihfari",
@@ -122,8 +165,8 @@ export const SPI = [
   },
   {
     nama: "SEKRETARIAT KABINET",
-    image: "",
-    desc: "",
+    image: { SETKAB },
+    desc: "Sekretariat Kabinet siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Angelica Terechdova V.O.",
@@ -145,8 +188,8 @@ export const SPI = [
   },
   {
     nama: "BENDAHARA KABINET",
-    image: "",
-    desc: "",
+    image: { BENKAB },
+    desc: "Bendahara Kabinet siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Ma'rifatus Sayyidah",
@@ -170,9 +213,24 @@ export const SPI = [
 
 export const Pengembangan = [
   {
+    nama: "KEMENTERIAN KOORDINATOR PENGEMBANGAN",
+    bpi: [
+      {
+        nama: "Pinkhan Azarin Rahmawaty",
+        jabatan: "Menteri Koordinator Pengembangan",
+        image: { PENGEMBANGAN_BPI_1 },
+      },
+      {
+        nama: "Adini Tasya Putri Pratama",
+        jabatan: "Sekretaris Kementerian Koordinator Pengembangan",
+        image: { PENGEMBANGAN_BPI_2 },
+      },
+    ],
+  },
+  {
     nama: "KEMENTERIAN PENGEMBANGAN SUMBER DAYA MAHASISWA",
-    image: "",
-    desc: "",
+    image: { PSDM },
+    desc: "Kementerian Pengembangan Sumber Daya Mahasiswa siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Devin Indra Kurniawan",
@@ -224,8 +282,8 @@ export const Pengembangan = [
   },
   {
     nama: "KEMENTERIAN RISET, INOVASI, DAN KARYA",
-    image: "",
-    desc: "",
+    image: { RINOYA },
+    desc: "Kementerian Riset, Inovasi, dan Karya siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Yusuf Yuaniar",
@@ -269,8 +327,8 @@ export const Pengembangan = [
   },
   {
     nama: "KEMENTERIAN SENI DAN OLAHRAGA",
-    image: "",
-    desc: "",
+    image: { SENORA },
+    desc: "Kementerian Seni dan Olahraga siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Maria Ruth Hanna Lefaan",
@@ -318,8 +376,8 @@ export const Pengembangan = [
   },
   {
     nama: "KEMENTERIAN BADAN USAHA MILIK MAHASISWA",
-    image: "",
-    desc: "",
+    image: { BUMM },
+    desc: "Kementerian Badan Usaha Milik Mahasiswa siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Ahmad Tuhfah Taqillah F",
@@ -357,9 +415,24 @@ export const Pengembangan = [
 
 export const Pergerakan = [
   {
+    nama: "KEMENTERIAN KOORDINATOR PERGERAKAN",
+    bpi: [
+      {
+        nama: "Pernantian Ginting",
+        jabatan: "Menteri Koordinator Pergerakan",
+        image: { PERGERAKAN_BPI_1 },
+      },
+      {
+        nama: "Mohammad Tito Ferdiansyah",
+        jabatan: "Sekretaris Kementerian Koordinator Pergerakan",
+        image: { PERGERAKAN_BPI_2 },
+      },
+    ],
+  },
+  {
     nama: "KEMENTERIAN ADVOKASI DAN KESEJAHTERAAN MAHASISWA",
-    image: "",
-    desc: "",
+    image: { ADVOKASI },
+    desc: "Kementerian Advokasi dan Kesejahteraan Mahasiswa siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Rediana Putri Nurochma",
@@ -395,8 +468,8 @@ export const Pergerakan = [
   },
   {
     nama: "KEMENTERIAN KAJIAN PENCERDASAN ISU",
-    image: "",
-    desc: "",
+    image: { KPI },
+    desc: "Kementerian Kajian Pencerdasan Isu siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Achmed Hibatillah",
@@ -448,8 +521,8 @@ export const Pergerakan = [
   },
   {
     nama: "KEMENTERIAN AKSI DAN PROPRAGANDA",
-    image: "",
-    desc: "",
+    image: { AKSPRO },
+    desc: "Kementerian Aksi dan Propraganda siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Naufal Aulia Helmi T.",
@@ -485,8 +558,8 @@ export const Pergerakan = [
   },
   {
     nama: "KEMENTERIAN PEMBERDAYAAN PEREMPUAN PROGRESIF",
-    image: "",
-    desc: "",
+    image: { PPP },
+    desc: "Kementerian Pemberdayaan Perempuan Progresif siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Marchya Karima Cedarta",
@@ -548,9 +621,25 @@ export const Pergerakan = [
 
 export const PPM = [
   {
+    nama: "KEMENTERIAN KOORDINATOR PENGABDIAN DAN PEMBERDAYAAN MASYARAKAT",
+    bpi: [
+      {
+        nama: "Brilliant Fadhl Faalih Asharli",
+        jabatan: "Menteri Koordinator Pengabdian dan Pemberdayaan Masyarakat",
+        image: { PPM_BPI_1 },
+      },
+      {
+        nama: "Mohammad Tito Ferdiansyah",
+        jabatan:
+          "Sekretaris Kementerian Koordinator Pengabdian dan Pemberdayaan Masyarakat",
+        image: { PPM_BPI_2 },
+      },
+    ],
+  },
+  {
     nama: "KEMENTERIAN SOSIAL MASYARAKAT",
-    image: "",
-    desc: "",
+    image: { SOSMA },
+    desc: "Kementerian Sosial Masyarakat siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Ali Akbar Ar Rasyidi",
@@ -602,8 +691,8 @@ export const PPM = [
   },
   {
     nama: "KEMENTERIAN LINGKUNGAN HIDUP",
-    image: "",
-    desc: "",
+    image: { LH },
+    desc: "Kementerian Lingkungan Hidup siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Ailsya Anargya Ardiyanti",
@@ -647,8 +736,8 @@ export const PPM = [
   },
   {
     nama: "KEMENTERIAN BRAWIJAYA MENGAJAR",
-    image: "",
-    desc: "",
+    image: { BM },
+    desc: "Kementerian Brawijaya Mengajar siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Dhimas Yoga Prastiyo",
@@ -684,9 +773,25 @@ export const PPM = [
 
 export const DJO = [
   {
+    nama: "KEMENTERIAN KOORDINATOR DIPLOMASI DAN JARINGAN ORGANISASI ",
+    bpi: [
+      {
+        nama: "Mazzay Majdy Makarim",
+        jabatan: "Menteri Koordinator Diplomasi dan Jaringan Organisasi",
+        image: { DJO_BPI_1 },
+      },
+      {
+        nama: "Najma Nan Haque Aufannisa",
+        jabatan:
+          "Sekretaris Kementerian Koordinator Diplomasi dan Jaringan Organisasi",
+        image: { DJO_BPI_2 },
+      },
+    ],
+  },
+  {
     nama: "KEMENTERIAN DALAM NEGERI",
-    image: "",
-    desc: "",
+    image: { DAGRI },
+    desc: "Kementerian Dalam Negeri siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     bph: [
       {
         nama: "Rachmat Rayansha",
@@ -737,8 +842,54 @@ export const DJO = [
     ],
   },
   {
-    nama: "KEMENTERIAN KOMUNIKASI DAN INFORMATIKA",
-    image: "",
+    nama: "KEMENTERIAN LUAR NEGERI",
+    image: { LUGRI },
+    desc: "Kementerian Luar Negeri siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
+    bph: [
+      {
+        nama: "Baiq Afifah Malika",
+        jabatan: "Menteri Luar Negeri",
+        image: { LUGRI_BPH_1 },
+      },
+      {
+        nama: "Muhammad Faiq F.",
+        jabatan: "Wakil Luar Negeri",
+        image: { LUGRI_BPH_2 },
+      },
+      {
+        nama: "E. Nikita Santanasyah",
+        jabatan: "Dirjen Informasi dan Diplomasi Publik",
+        image: { LUGRI_BPH_3 },
+      },
+      {
+        nama: "Chesta Bagus Sutan Ravi",
+        jabatan: "Dirjen Perjanjian dan Kerjasama Multilateral",
+        image: { LUGRI_BPH_4 },
+      },
+    ],
+    programKerja: [
+      {
+        nama: "BRAWIJAYA BERKELANA",
+        desc: "Alat silaturahmi berupa studi banding Eksekutif Mahasiswa dengan pihak eksternal di luar Universitas Brawijaya serta membangun kerjasama yang berkelanjutan.",
+      },
+      {
+        nama: "BRAWIJAYA MUDA",
+        desc: "Merupakan program kerja yang bertujuan untuk memperkenalkan kampus Universitas Brawijaya kepada para pelajar SMA/MA/SMK Sederajat dengan jangkauan nasional.",
+      },
+      {
+        nama: "GLOVISCO",
+        desc: "Global Visionary Conference (Glovisco) adalah sebuah wadah kegiatan konferensi internasional dengan menghadirkan speakers serta merupakan sebuah perwujudan dalam mengasah berbagai skills dalam bentuk sidang simulasi PBB.",
+      },
+      {
+        nama: "Malang Local Community Conference (MLCC) ",
+        desc: "MLCC adalah program yang bergerak dalam mewadahi aspirasi serta isu local community di malang. ",
+      },
+    ],
+  },
+  {
+    nama: "KEMENTERIAN KOMUNIKASI DAN INFORMASI",
+    image:
+      "Kementerian Komunikasi dan Informasi siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
     desc: "",
     bph: [
       {
@@ -791,51 +942,6 @@ export const DJO = [
       {
         nama: "Maintenance Website EMUB24",
         desc: `Program "Maintenance Website EMUB 2024" adalah upaya menyeluruh untuk menjaga dan meningkatkan kualitas serta kinerja website resmi Eksekutif Mahasiswa Universitas Brawijaya (EMUB) sepanjang tahun 2024. Program ini mencakup beberapa kegiatan, termasuk re-design tampilan website sesuai tema tahun EMUB24, perawatan berkala rutin untuk memelihara dan mengoptimalkan kinerja website, pengembangan konten baru, serta analisis kinerja berkala untuk memantau penggunaan dan interaksi pengguna.`,
-      },
-    ],
-  },
-  {
-    nama: "KEMENTERIAN LUAR NEGERI",
-    image: "",
-    desc: "",
-    bph: [
-      {
-        nama: "Baiq Afifah Malika",
-        jabatan: "Menteri Luar Negeri",
-        image: { LUGRI_BPH_1 },
-      },
-      {
-        nama: "Muhammad Faiq F.",
-        jabatan: "Wakil Luar Negeri",
-        image: { LUGRI_BPH_2 },
-      },
-      {
-        nama: "E. Nikita Santanasyah",
-        jabatan: "Dirjen Informasi dan Diplomasi Publik",
-        image: { LUGRI_BPH_3 },
-      },
-      {
-        nama: "Chesta Bagus Sutan Ravi",
-        jabatan: "Dirjen Perjanjian dan Kerjasama Multilateral",
-        image: { LUGRI_BPH_4 },
-      },
-    ],
-    programKerja: [
-      {
-        nama: "BRAWIJAYA BERKELANA",
-        desc: "Alat silaturahmi berupa studi banding Eksekutif Mahasiswa dengan pihak eksternal di luar Universitas Brawijaya serta membangun kerjasama yang berkelanjutan.",
-      },
-      {
-        nama: "BRAWIJAYA MUDA",
-        desc: "Merupakan program kerja yang bertujuan untuk memperkenalkan kampus Universitas Brawijaya kepada para pelajar SMA/MA/SMK Sederajat dengan jangkauan nasional.",
-      },
-      {
-        nama: "GLOVISCO",
-        desc: "Global Visionary Conference (Glovisco) adalah sebuah wadah kegiatan konferensi internasional dengan menghadirkan speakers serta merupakan sebuah perwujudan dalam mengasah berbagai skills dalam bentuk sidang simulasi PBB.",
-      },
-      {
-        nama: "Malang Local Community Conference (MLCC) ",
-        desc: "MLCC adalah program yang bergerak dalam mewadahi aspirasi serta isu local community di malang. ",
       },
     ],
   },
