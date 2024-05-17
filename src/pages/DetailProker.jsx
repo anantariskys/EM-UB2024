@@ -21,6 +21,7 @@ const DetailProker = () => {
   
     return (
         <div className="bg-primary-white relative font-helvetica-regular">
+          <img src="../assets/icon1.jpg"></img>
             <img
                 src={right}
                 className="absolute top-0 right-0 w-[15%] lg:w-[10%] aspect-auto"

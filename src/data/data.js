@@ -6,7 +6,6 @@ import image4_3 from '../assets/ProkerEM/6ProkerMegaBesar/4.3.jpeg';
 import image4_4 from '../assets/ProkerEM/6ProkerMegaBesar/4.4.jpeg';
 // 6 PROKER MEGA BESAR
 
-
 // SPI
 // Gambar SPI
 import SPI_BPI_1 from "../assets/Struktur/Petinggi/SPI/SPI_BPI_1.png";

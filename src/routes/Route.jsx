@@ -13,125 +13,129 @@ import KoordinatorPergerakan from "../pages/struktur/KoordinatorPergerakan";
 import KoordinatorDJO from "../pages/struktur/KoordinatorDJO";
 import KoordinatorSPI from "../pages/struktur/KoordinatorSPI";
 import KoordinatorPPM from "../pages/struktur/KoordinatorPPM";
-
+import NewsForm from "../pages/admin/NewsForm";
 
 const createRouter = createBrowserRouter([
-    {
-        path: "/",
-        element: (
-            <PageLayout>
-                <LandingPage />
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/tentang",
-        element: (
-            <PageLayout>
-                <Tentang />
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/berita",
-        element: (
-            <PageLayout>
-                <Berita />
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/proker",
-        element: (
-            <PageLayout>
-                <Proker/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/proker/:id",
-        element: (
-            <PageLayout>
-                <DetailProker/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/berita/:id",
-        element: (
-            <PageLayout>
-                <DetailBerita/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/profile-alumni",
-        element: (
-            <PageLayout>
-                <Alumni/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/struktur",
-        element: (
-            <PageLayout>
-                <Alumni/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/struktur/pengembangan",
-        element: (
-            <PageLayout>
-                <KoordinatorPengembangan/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/struktur/pergerakan",
-        element: (
-            <PageLayout>
-                <KoordinatorPergerakan/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/struktur/diplomasi-dan-jaringan-organisasi",
-        element: (
-            <PageLayout>
-                <KoordinatorDJO/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/struktur/spi",
-        element: (
-            <PageLayout>
-                <KoordinatorSPI/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/struktur/ppm",
-        element: (
-            <PageLayout>
-                <KoordinatorPPM/>
-            </PageLayout>
-        ),
-    },
-    {
-        path: "/comingsoon",
-        element: <ComingSoon />,
-    },
-    {
-        path: "/*",
-        element: <div>Not found</div>,
-    },
+  {
+    path: "/",
+    element: (
+      <PageLayout>
+        <LandingPage />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/tentang",
+    element: (
+      <PageLayout>
+        <Tentang />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/berita",
+    element: (
+      <PageLayout>
+        <Berita />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/proker",
+    element: (
+      <PageLayout>
+        <Proker />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/proker/:id",
+    element: (
+      <PageLayout>
+        <DetailProker />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/berita/:id",
+    element: (
+      <PageLayout>
+        <DetailBerita />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/profile-alumni",
+    element: (
+      <PageLayout>
+        <Alumni />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/struktur",
+    element: (
+      <PageLayout>
+        <Alumni />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/struktur/pengembangan",
+    element: (
+      <PageLayout>
+        <KoordinatorPengembangan />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/struktur/pergerakan",
+    element: (
+      <PageLayout>
+        <KoordinatorPergerakan />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/struktur/diplomasi-dan-jaringan-organisasi",
+    element: (
+      <PageLayout>
+        <KoordinatorDJO />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/struktur/spi",
+    element: (
+      <PageLayout>
+        <KoordinatorSPI />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/struktur/ppm",
+    element: (
+      <PageLayout>
+        <KoordinatorPPM />
+      </PageLayout>
+    ),
+  },
+  {
+    path: "/comingsoon",
+    element: <ComingSoon />,
+  },
+  {
+    path: "/*",
+    element: <div>Not found</div>,
+  },
+  {
+    path: "/adminnnn",
+    element: <NewsForm />,
+  },
 ]);
 
 const Route = () => {
-    return <RouterProvider router={createRouter} />;
+  return <RouterProvider router={createRouter} />;
 };
 
 export default Route;
