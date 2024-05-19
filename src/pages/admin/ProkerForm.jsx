@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SideBar from "./SideBar";
 
-const NewsForm = () => {
+const ProkerForm = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [selectedImages, setSelectedImages] = useState([]);
   const [previews, setPreviews] = useState([]);
-
+  //   Image
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files);
     setSelectedImages(files);
@@ -31,6 +31,18 @@ const NewsForm = () => {
     setSelectedImages([]);
     setPreviews([]);
   };
+  //   Dropdown
+  const [selectedOption, setSelectedOption] = useState("");
+
+  const options = [
+    { value: "option1", label: "KOMINFO" },
+    { value: "option2", label: "Option 2" },
+    { value: "option3", label: "Option 3" },
+  ];
+
+  const handleChange = (e) => {
+    setSelectedOption(e.target.value);
+  };
 
   // useEffect(() => {
   //   axios
@@ -43,6 +55,7 @@ const NewsForm = () => {
     try {
       await axios.get("http://localhost:3000/users", { title, content });
       console.log("Images submitted:", selectedImages);
+      console.log("Selected option:", selectedOption);
       // setSelectedImage("");
       // (res) => console.log(res);
       alert("Berita berhasil diunggah!");
@@ -59,19 +72,44 @@ const NewsForm = () => {
   return (
     <div>
       <SideBar className="z-0" />
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-sm z-40 drawer-content absolute left-[40%] top-[20%]">
-        <h2 className="text-2xl font-bold mb-4">Unggah Berita Baru</h2>
+      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-sm  drawer-content absolute left-[40%] top-[5%]">
+        <h2 className="text-2xl font-bold mb-4">Unggah Program Kerja Baru</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Judul Berita"
+            placeholder="Nama Program kerja"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             required={true}
             className="border border-gray-400 rounded-lg px-3 py-2 mb-2 block w-full"
           />
+          <h2 className="text-xl font-bold mb-4">Pilih Kementerian</h2>
+          {/* Dropdown kementrian */}
+          <div className="mb-4">
+            <label
+              className="block text-gray-700 text-sm font-bold mb-2"
+              htmlFor="dropdown"
+            >
+              Options
+            </label>
+            <select
+              id="dropdown"
+              value={selectedOption}
+              onChange={handleChange}
+              className="block w-full mt-1 text-gray-700 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+            >
+              <option value="" disabled>
+                Select an option
+              </option>
+              {options.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
           <textarea
-            placeholder="Isi Berita"
+            placeholder="Deskripsi Program Kerja"
             value={content}
             onChange={(e) => setContent(e.target.value)}
             required={true}
@@ -127,4 +165,4 @@ const NewsForm = () => {
   );
 };
 
-export default NewsForm;
+export default ProkerForm;

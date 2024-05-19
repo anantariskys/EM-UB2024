@@ -14,6 +14,12 @@ import KoordinatorDJO from "../pages/struktur/KoordinatorDJO";
 import KoordinatorSPI from "../pages/struktur/KoordinatorSPI";
 import KoordinatorPPM from "../pages/struktur/KoordinatorPPM";
 import NewsForm from "../pages/admin/NewsForm";
+import ProkerForm from "../pages/admin/ProkerForm";
+import StrukturPres from "../pages/struktur/StrukturPres";
+import Struktur from "../pages/struktur/Struktur";
+import AdminPage from "../pages/admin/AdminPage";
+import TautanForm from "../pages/admin/TautanForm";
+import AlumniForm from "../pages/admin/AlumniForm";
 
 const createRouter = createBrowserRouter([
   {
@@ -73,7 +79,7 @@ const createRouter = createBrowserRouter([
     ),
   },
   {
-    path: "/struktur",
+    path: "/alumni",
     element: (
       <PageLayout>
         <Alumni />
@@ -130,7 +136,35 @@ const createRouter = createBrowserRouter([
   },
   {
     path: "/adminnnn",
+    element: <AdminPage />,
+  },
+  {
+    path: "/upberita",
     element: <NewsForm />,
+  },
+  {
+    path: "/upproker",
+    element: <ProkerForm />,
+  },
+  {
+    path: "/upalumni",
+    element: <AlumniForm />,
+  },
+  {
+    path: "/uptautan",
+    element: <TautanForm />,
+  },
+  // {
+  //   path: "/upberita",
+  //   element: <NewsForm />,
+  // },
+  // {
+  //   path: "/upberita",
+  //   element: <NewsForm />,
+  // },
+  {
+    path: "/struktur",
+    element: <Struktur />,
   },
 ]);
 
