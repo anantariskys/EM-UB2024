@@ -7,7 +7,7 @@ const CardProker = ({ index, nama, desc }) => {
                 index % 2 == 0
                     ? "bg-primary-tealBlue text-primary-white"
                     : "bg-primary-white text-primary-navbarText "
-            } w-full aspect-[12/14] rounded-xl p-7 hover:-translate-y-1 duration-300 ease-in-out hover:shadow-xl group`}
+            } w-full aspect-[12/14] rounded-xl p-7 hover:-translate-y-1  duration-300 ease-in-out hover:shadow-xl group`}
         >
             <p className="font-helvetica-extraBold text-4xl text-end">
                 {index + 1}

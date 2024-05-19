@@ -1,12 +1,20 @@
+import { motion } from 'framer-motion';
 import React, { useState } from 'react'
 
-const Collapse = ({data,children,bg="bg-primary-tealBlue"}) => {
+const Collapse = ({data,children,bg="bg-primary-tealBlue",x=0,y=0}) => {
     const [isActive,setIsActive] = useState(false);
     const handleIsActive=()=>{
         setIsActive(!isActive);
     }
   return (
-    <div className='group'>
+    <motion.div 
+    style={{
+      x,
+      y
+    }}
+    
+    
+    className='group'>
   <div onClick={()=>{handleIsActive()}} className={`${isActive?"rounded-t-xl  rounded-b-none duration-100":"duration-500 rounded-xl delay-100"} ${bg} text-base lg:text-2xl font-helvetica-extraBold text-slate-100 py-3 px-5 lg:px-20 duration-100 ease-in-out text-center w-full`}>
     <h1 className='text-shadow-heading'>{children}</h1>
   </div>
@@ -20,7 +28,7 @@ const Collapse = ({data,children,bg="bg-primary-tealBlue"}) => {
         }
     </ul>
   </div>
-</div>
+</motion.div>
   )
 }
 

@@ -7,8 +7,11 @@ const BPH = ({list}) => {
     <section className="container mx-auto px-24 py-5 justify-center flex gap-1">
     {
         list.bph.map((item,index)=>(
-    <div className="w-1/6 group" key={index}>
-        <img draggable="false" className="w-full aspect-[9/15] group-hover:-translate-y-2 duration-300 ease-in-out  object-contain rounded-lg " src={item.image}/>
+    <div className="w-[18%] group" key={index}>
+        <div className='w-full aspect-[9/15] group-hover:-translate-y-2 duration-300 ease-in-out  relative'>
+        <img draggable="false" className="h-full  object-contain rounded-lg " src={item.image}/>
+
+        </div>
         <h3 className=" text-primary-tealBlue font-helvetica-extraBold text-base">
             {item.nama}
         </h3>

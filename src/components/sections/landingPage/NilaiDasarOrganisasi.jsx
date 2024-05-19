@@ -5,6 +5,9 @@ import Progres from "../../../assets/nilaiDasarOrganisasi/Progres.png";
 import Dinamis from "../../../assets/nilaiDasarOrganisasi/Dinamis.png";
 import Terbuka from "../../../assets/nilaiDasarOrganisasi/Terbuka.png";
 const NilaiDasarOrganisasi = () => {
+
+    
+
     return (
         <section className="lg:mt-10 mt-5 px-4 lg:px-24 container mx-auto ">
         
@@ -20,22 +23,12 @@ const NilaiDasarOrganisasi = () => {
                         <img
                             src={Obyektif}
                             loading="lazy"
-                            className="w-3/4 ms-auto aspect-square object-cover group-hover:opacity-0 duration-300 ease-in-out"
+                            className="w-3/4 ms-auto aspect-square object-cover duration-300 ease-in-out z-20 relative"
                             alt="Obyektif"
                             draggable="false"
                         />
                         <div className="w-full h-0 flex flex-col justify-end absolute bottom-0 left-0 origin-bottom duration-500 ease-in-out group-hover:h-full bg-[#DCF7FB] z-10 group-hover:py-4 group px-4 ">
-                            <img
-                                draggable="false"
-                                src={Obyektif}
-                                loading="lazy"
-                                className="w-2/4 mix-blend-exclusion  ms-auto aspect-square object-cover group-hover:opacity-100 opacity-0 duration-300 ease-in-out"
-                                alt="Obyektif"
-                            />
-                            <p className="text-[0.625rem] lg:text-lg text-primary-tealBlue opacity-0  group-hover:opacity-100 duration-300 delay-100">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Lorem ipsum dolor.
-                            </p>
+                          
                         </div>
                     </div>
                   
@@ -46,22 +39,12 @@ const NilaiDasarOrganisasi = () => {
                         <img
                             src={Rasional}
                             loading="lazy"
-                            className="w-3/4 ms-auto aspect-square object-cover group-hover:opacity-0 duration-300 ease-in-out"
+                            className="w-3/4 ms-auto aspect-square object-cover duration-300 ease-in-out z-20 relative"
                             alt="Rasional"
                             draggable="false"
                         />
                         <div className="w-full h-0 flex flex-col justify-end absolute bottom-0 left-0 origin-bottom duration-500 ease-in-out group-hover:h-full bg-[#DCF7FB] z-10 group-hover:py-4 group px-4 ">
-                            <img
-                                draggable="false"
-                                src={Rasional}
-                                loading="lazy"
-                                className="w-2/4 mix-blend-exclusion  ms-auto aspect-square object-cover group-hover:opacity-100 opacity-0 duration-300 ease-in-out"
-                                alt="Rasional"
-                            />
-                            <p className="text-[0.625rem] lg:text-lg text-primary-tealBlue opacity-0  group-hover:opacity-100 duration-300 delay-100">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Lorem ipsum dolor.
-                            </p>
+                          
                         </div>
                     </div>
                   
@@ -72,22 +55,12 @@ const NilaiDasarOrganisasi = () => {
                         <img
                             src={Progres}
                             loading="lazy"
-                            className="w-3/4 ms-auto aspect-square object-cover group-hover:opacity-0 duration-300 ease-in-out"
+                            className="w-3/4 ms-auto aspect-square object-cover duration-300 ease-in-out z-20 relative"
                             alt="Progres"
                             draggable="false"
                         />
                         <div className="w-full h-0 flex flex-col justify-end absolute bottom-0 left-0 origin-bottom duration-500 ease-in-out group-hover:h-full bg-[#DCF7FB] z-10 group-hover:py-4 group px-4 ">
-                            <img
-                                draggable="false"
-                                src={Progres}
-                                loading="lazy"
-                                className="w-2/4 mix-blend-exclusion  ms-auto aspect-square object-cover group-hover:opacity-100 opacity-0 duration-300 ease-in-out"
-                                alt="Progres"
-                            />
-                            <p className="text-[0.625rem] lg:text-lg text-primary-tealBlue opacity-0  group-hover:opacity-100 duration-300 delay-100">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Lorem ipsum dolor.
-                            </p>
+                           
                         </div>
                     </div>
                   
@@ -98,22 +71,12 @@ const NilaiDasarOrganisasi = () => {
                         <img
                             src={Dinamis}
                             loading="lazy"
-                            className="w-3/4 ms-auto aspect-square object-cover group-hover:opacity-0 duration-300 ease-in-out"
+                            className="w-3/4 ms-auto aspect-square object-cover duration-300 ease-in-out z-20 relative"
                             alt="Dinamis"
                             draggable="false"
                         />
                         <div className="w-full h-0 flex flex-col justify-end absolute bottom-0 left-0 origin-bottom duration-500 ease-in-out group-hover:h-full bg-[#DCF7FB] z-10 group-hover:py-4 group px-4 ">
-                            <img
-                                draggable="false"
-                                src={Dinamis}
-                                loading="lazy"
-                                className="w-2/4 mix-blend-exclusion  ms-auto aspect-square object-cover group-hover:opacity-100 opacity-0 duration-300 ease-in-out"
-                                alt="Dinamis"
-                            />
-                            <p className="text-[0.625rem] lg:text-lg text-primary-tealBlue opacity-0  group-hover:opacity-100 duration-300 delay-100">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Lorem ipsum dolor.
-                            </p>
+                        
                         </div>
                     </div>
                   
@@ -124,22 +87,12 @@ const NilaiDasarOrganisasi = () => {
                         <img
                             src={Terbuka}
                             loading="lazy"
-                            className="w-3/4 ms-auto aspect-square object-cover group-hover:opacity-0 duration-300 ease-in-out"
+                            className="w-3/4 ms-auto aspect-square object-cover duration-300 ease-in-out z-20 relative"
                             alt="Terbuka"
                             draggable="false"
                         />
                         <div className="w-full h-0 flex flex-col justify-end absolute bottom-0 left-0 origin-bottom duration-500 ease-in-out group-hover:h-full bg-[#DCF7FB] z-10 group-hover:py-4 group px-4 ">
-                            <img
-                                draggable="false"
-                                src={Terbuka}
-                                loading="lazy"
-                                className="w-2/4 mix-blend-exclusion  ms-auto aspect-square object-cover group-hover:opacity-100 opacity-0 duration-300 ease-in-out"
-                                alt="Terbuka"
-                            />
-                            <p className="text-[0.625rem] lg:text-lg text-primary-tealBlue opacity-0  group-hover:opacity-100 duration-300 delay-100">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Lorem ipsum dolor.
-                            </p>
+                          
                         </div>
                     </div>
                   

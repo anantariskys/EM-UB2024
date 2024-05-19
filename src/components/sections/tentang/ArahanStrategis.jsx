@@ -1,6 +1,7 @@
 import React from "react";
-import { useState } from "react";
+import { useRef} from "react";
 import Collapse from "../../Collapse";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 
 const ArahanStrategis = () => {
     const data = [
@@ -54,23 +55,43 @@ const ArahanStrategis = () => {
         },
     ];
 
+    const target = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+      target: target,
+      offset: ["start end", "end end"],
+  });
+  const value1 = useTransform(scrollYProgress, [0, 1], [-50,0]);
+  const value2 = useTransform(scrollYProgress, [0, 1], [50,0]);
+  const valueY = useTransform(scrollYProgress, [0, 1], [50,0]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0,1]);
+
     return (
-        <section className="container mx-auto px-4 lg:px-24 py-10">
+        <section ref={target} className="container overflow-hidden mx-auto px-4 lg:px-24 py-10 relative z-30">
             <div className="flex w-full lg:gap-5 gap-2  items-end justify-start mb-10">
-                <div className="w-full h-0.5 lg:h-1 bg-gradient-to-r from-primary-skyBlue to-primary-tealBlue"></div>
-                <h1 className="text-primary-charcoalGray text-2xl lg:text-5xl font-black  font-helvetica-extraBold w-fit whitespace-nowrap ">
+                <motion.div 
+                style={{
+                    x:value1
+                }}
+                className="w-full h-0.5 lg:h-1 bg-gradient-to-r from-primary-skyBlue to-primary-tealBlue">
+                    </motion.div>
+                <motion.h1 
+                  style={{
+                    x:value2
+                }}
+                className="text-primary-charcoalGray text-2xl lg:text-5xl font-black  font-helvetica-extraBold w-fit whitespace-nowrap ">
                     Arahan Strategis
-                </h1>
+                </motion.h1>
             </div>
-            <Collapse data={data[0].desc}>{data[0].title}</Collapse>
+            <Collapse  data={data[0].desc}>{data[0].title}</Collapse>
             <div className="flex flex-col lg:flex-row mt-5 gap-5">
                 <div className="lg:w-1/2 w-full flex flex-col gap-5">
-                    <Collapse bg="bg-[#2D9596]" data={data[1].desc}>{data[1].title}</Collapse>
-                    <Collapse  data={data[2].desc}>{data[2].title}</Collapse>
+                    <Collapse x={value1} y={valueY} bg="bg-[#2D9596]" data={data[1].desc}>{data[1].title}</Collapse>
+                    <Collapse x={value1-10} data={data[2].desc}>{data[2].title}</Collapse>
                 </div>
                 <div className="lg:w-1/2 w-full flex flex-col gap-5">
-                    <Collapse bg="bg-[#628E90]" data={data[3].desc}>{data[3].title}</Collapse>
-                    <Collapse bg="bg-[#408CA5]" data={data[4].desc}>{data[4].title}</Collapse>
+                    <Collapse x={value2-10}  bg="bg-[#628E90]" data={data[3].desc}>{data[3].title}</Collapse>
+                    <Collapse x={value2} y={valueY} bg="bg-[#408CA5]" data={data[4].desc}>{data[4].title}</Collapse>
                 </div>
             </div>
         </section>

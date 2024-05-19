@@ -29,10 +29,11 @@ const Footer = () => {
                 </div>
                 <div className="flex gap-0.5 lg:gap-2 flex-col items-start mt-3 lg:mt-0">
                     <h3 className="text-lg lg:text-xl font-bold">Sosial Media</h3>
-                    <p className="text-sm lg:text-base font-light">Beranda</p>
-                    <p className="text-sm lg:text-base font-light">Berita</p>
-                    <p className="text-sm lg:text-base font-light">Tentang</p>
-                    <p className="text-sm lg:text-base font-light">Struktur EM</p>
+                    <p className="text-sm lg:text-base font-light">Linkedln</p>
+                    <p className="text-sm lg:text-base font-light">Instagram</p>
+                    <p className="text-sm lg:text-base font-light">Youtube</p>
+                    <p className="text-sm lg:text-base font-light">Tiktok</p>
+                    <p className="text-sm lg:text-base font-light">X</p>
                 </div>
                 <div className="flex gap-0.5 lg:gap-2 flex-col  lg:w-2/5 items-start">
                     <h3 className="text-lg lg:text-xl font-bold mt-3 lg:mt-0">Alamat</h3>

@@ -38,6 +38,8 @@ const KoordinatorPPM = () => {
           <CardKementrian
           name={item.nama}
           key={index}
+          desc={item.desc}
+          image={item.image}
           onClick={() => scrollToSection(index)}
         />
         ))}
@@ -48,6 +50,7 @@ const KoordinatorPPM = () => {
               ref={(el) => (refs.current[index] = el)}
               image={item.image}
               nama={item.nama}
+              
               key={index}
             />
           <BPH list={item} />

@@ -31,13 +31,15 @@ const KoordinatorPergerakan = () => {
     };
 
   return (
-    <div className="font-helvetica-regular bg-white pb-20">
+    <div className="font-helvetica-regular bg-primary-white pb-20">
       <Header bpi={Pergerakan[0].bpi} title={"KEMENTRIAN KOORDINATOR PERGERAKAAN"} />
       <section className="mx-auto px-24 container flex justify-center  gap-5 py-10 ">
         {Pergerakan[0].kementerian.map((item, index) => (
           <CardKementrian
           name={item.nama}
           key={index}
+          desc={item.desc}
+          image={item.image}
           onClick={() => scrollToSection(index)}
         />
         ))}
@@ -48,6 +50,7 @@ const KoordinatorPergerakan = () => {
               ref={(el) => (refs.current[index] = el)}
               image={item.image}
               nama={item.nama}
+              
               key={index}
             />
           <BPH list={item} />

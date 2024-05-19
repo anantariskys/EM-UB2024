@@ -8,7 +8,7 @@ import image4_4 from "../assets/ProkerEM/6ProkerMegaBesar/4.4.jpeg";
 // SPI
 // Gambar SPI
 import SPI_BPI_1 from "../assets/Struktur/Petinggi/SPI/SPI_BPI_1.png";
-import SPI_BPI_2 from "../assets/Struktur/Petinggi/SPI/SPI_BPI_1.png";
+import SPI_BPI_2 from "../assets/Struktur/Petinggi/SPI/SPI_BPI_2.png";
 import PARO_BPH_1 from "../assets/Struktur/Petinggi/SPI/PARO_BPH_1.png";
 import PARO_BPH_2 from "../assets/Struktur/Petinggi/SPI/PARO_BPH_2.png";
 import PARO_BPH_3 from "../assets/Struktur/Petinggi/SPI/PARO_BPH_3.png";

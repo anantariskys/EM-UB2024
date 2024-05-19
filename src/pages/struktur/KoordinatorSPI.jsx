@@ -38,6 +38,8 @@ const KoordinatorSPI = () => {
           <CardKementrian
           name={item.nama}
           key={index}
+          desc={item.desc}
+          image={item.image}
           onClick={() => scrollToSection(index)}
         />
         ))}

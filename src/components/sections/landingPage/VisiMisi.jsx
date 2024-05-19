@@ -42,7 +42,7 @@ const VisiMisi = () => {
 
     return (
         <section ref={progres} className="lg:flex py-20 hidden  gap-10 px-24 bg-primary-white">
-            <div className="size-[10%] sticky top-[45vh] flex justify-center z-50  items-center">
+            <div className="size-[5%] sticky top-[45vh] flex justify-center z-50  items-center">
                 <div className="top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 size-4/6 bg-primary-charcoalGray rounded-full absolute"></div>
                 <CircularProgressbar value={circularProgress} maxValue={100} />
             </div>
@@ -51,7 +51,7 @@ const VisiMisi = () => {
                 <motion.h2
                     ref={visi}
                     className={`
-    h-[75vh]
+    h-[50vh]
     
     flex items-center
     duration-1000
@@ -71,7 +71,7 @@ const VisiMisi = () => {
                 <motion.h2
                     ref={misi}
                     className={`
-    h-[75vh]
+    h-[50vh]
     flex items-center
     duration-1000
     ease-in-out
@@ -89,7 +89,7 @@ const VisiMisi = () => {
                 </motion.h2>
 
                 </div>
-            <div className="sticky w-3/5 flex justify-center items-center top-[15vh] h-[75vh] ">
+            <div className="sticky w-3/5 flex justify-center items-center top-[30vh] h-[50vh] ">
                 <motion.p 
                 className={`${visiIsInView?"opacity-100":"opacity-0"} duration-200 ease-in-out absolute text-primary-charcoalGray text-3xl font-helvetica-regular`}>
                     Terwujudnya Eksekutif Mahasiswa Brawijaya sebagai{" "}

@@ -5,6 +5,7 @@ import hero from "../../src/assets/ProkerEM/heroImage.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { prokerMegaBesar } from "../data/data";
 import { Link } from "react-router-dom";
+import segitiga from "../assets/segitiga.png"
 const Proker = () => {
     
 
@@ -45,7 +46,7 @@ const Proker = () => {
                 <main className="grid grid-cols-3 grid-rows-1 gap-10 py-10">
                     {prokerMegaBesar.map((item, index) => (
                         <Link to={`/proker/${item.id}`} key={index}>
-                        <div className="w-full aspect-[9/7] group relative shadow-xl rounded overflow-hidden">
+                        <div className="w-full aspect-[9/7] group hover:shadow-2xl duration-500 ease-in-out relative shadow-xl rounded overflow-hidden">
                             <Splide
                                 options={{
                                     autoplay: true,
@@ -71,10 +72,11 @@ const Proker = () => {
                                 <h1>{item.nama}</h1>
 
                             </div>
-                            <div className="w-full delay-100  group-hover:max-h-screen group-hover:duration-500 duration-300 ease-linear max-h-0 rounded-tl-[40px] overflow-hidden group-hover:py-3 py-0   bg-primary-white absolute bottom-0 left-0 px-7 ">
+                            <div className="w-full delay-100 h-fit duration-300  ease-linear  rounded-tl-[60px]  py-3   bg-primary-white absolute group-hover:translate-y-0 translate-y-[150%] bottom-0 left-0 px-7 ">
+                                <img src={segitiga} className='absolute w-1/5 -translate-y-full  top-0 right-0' alt="" />
                                 <div>
                                     <div className="flex items-center justify-between">
-                                        <h3 className="font-bold text-lg line-clamp-1">
+                                        <h3 className="font-bold text-lg ">
                                             {item.nama}
                                         </h3>
                                         <div className="w-fit px-3 py-1.5 text-xs rounded-2xl bg-primary-tealBlue text-slate-100">

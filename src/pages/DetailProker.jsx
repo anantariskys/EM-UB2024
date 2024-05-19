@@ -60,11 +60,11 @@ const DetailProker = () => {
                       }
                  
                     </Splide>
-                    <div className="border text-sm lg:text-base border-primary-charcoalGray flex flex-col gap-5 lg:gap-10 border-opacity-20 shadow-lg p-5 lg:p-10">
+                    <div className="border text-sm lg:text-base bg-primary-white border-primary-charcoalGray flex flex-col gap-5 lg:gap-10 border-opacity-20 shadow-lg p-5 lg:p-10">
                       {
                         data.body&&data.body.map((item,index)=>(
 
-                          <p className="text-xl">{item}</p>
+                          <p className="lg:text-xl md:text-lg text-sm">{item}</p>
                         ))
                       }
                  

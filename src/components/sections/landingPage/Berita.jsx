@@ -42,7 +42,7 @@ const Berita = () => {
                 </div>
                 <div className="w-full h-0.5 lg:h-1 bg-gradient-to-r from-primary-skyBlue to-primary-tealBlue"></div>
             </div>
-            <main className="lg:px-20 px-10 py-5 lg:py-10 relative">
+            <main className="lg:px-20 px-10  relative">
                 <Splide 
                 options={{
                 
@@ -63,16 +63,19 @@ const Berita = () => {
                             perPage:1
                         },
                         
-                      }
+                      },
 
 
                 }}
                 >
                   {
                     dummy.map((item)=>(
-                        <SplideSlide className=" h-fit">
-                        <div className="aspect-[9/13] w-full  relative rounded border overflow-hidden">
-                            <img src="https://source.unsplash.com/random/900×700/?university" className="w-full aspect-video" alt="" />
+                        <SplideSlide className=" h-fit py-10">
+                        <div className="aspect-[9/13] w-full group hover:shadow-xl duration-300 ease-in-out relative rounded border overflow-hidden">
+                            <div className="w-full aspect-video overflow-hidden">
+                            <img src="https://source.unsplash.com/random/900×700/?university" className="size-full object-cover group-hover:scale-110 group-hover:rotate-3 duration-1000 ease-in-out" alt="" />
+
+                            </div>
                             <div className="w-full  py-1 px-2 ">
                                 <div className="flex items-start justify-between">
                                     <small className="text-xs">20 April 2024</small>

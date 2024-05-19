@@ -32,13 +32,15 @@ const KoordinatorDJO = () => {
     };
 
   return (
-    <div className="font-helvetica-regular bg-white pb-20 relative">
+    <div className="font-helvetica-regular bg-primary-white pb-20 relative">
       <Header bpi={DJO[0].bpi} title={"KEMENTRIAN KOORDINATOR DIPLOMASI DAN JARINGAN ORGANISASI"} />
       <section className="mx-auto px-24 container flex justify-center gap-5 py-10 ">
         {DJO[0].kementerian.map((item, index) => (
             <CardKementrian
             name={item.nama}
             key={index}
+            desc={item.desc}
+            image={item.image}
             onClick={() => scrollToSection(index)}
           />
         ))}

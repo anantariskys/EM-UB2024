@@ -13,7 +13,7 @@ export default {
         tealBlue: "#007B8E",
         paleSalmon: "#ECD7CD",
         navbarText: "#00094D",
-        white : "#f6f6f6"
+        white : "#ffffff"
         }
         
        

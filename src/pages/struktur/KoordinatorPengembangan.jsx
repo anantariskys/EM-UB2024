@@ -34,7 +34,7 @@ const KoordinatorPengembangan = () => {
 
 
     return (
-        <div className="font-helvetica-regular bg-white pb-20">
+        <div className="font-helvetica-regular bg-primary-white pb-20">
             <Header bpi={Pengembangan[0].bpi} title={"KEMENTRIAN KOORDINATOR PENGEMBANGAN"}/>
 
             <section className="mx-auto px-24 container flex justify-center  gap-5 py-10">
@@ -42,6 +42,8 @@ const KoordinatorPengembangan = () => {
                     <CardKementrian
                     name={item.nama}
                     key={index}
+                    image={item.image}
+                    desc={item.desc}
                     onClick={() => scrollToSection(index)}
                   />
                 ))}
