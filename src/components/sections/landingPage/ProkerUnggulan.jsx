@@ -42,9 +42,12 @@ const ProkerUnggulan = () => {
       <div className="w-full h-16 bg-primary-white absolute -bottom-8 left-0 rounded-[100%] z-40"></div>
 
       <div className="flex justify-evenly lg:justify-center items-center  lg:gap-12 absolute  ">
-        {imageProker.map((item, index) => (
-          <ListImage key={index} index={index} top={index % 2 === 0 ? eval(`value${index / 2 + 1}`) : ""} listImage={item} bottom={index % 2 !== 0 ? eval(`value${index  + 1}`) : ""}  />
-        ))}
+          <ListImage listImage={imageProker[0]} index={0}  bottom={value1}/>
+          <ListImage listImage={imageProker[1]} index={1} top={value2}/>
+          <ListImage listImage={imageProker[2]} index={3} bottom={value3}/>
+          <ListImage listImage={imageProker[3]} index={4}  top={value2}/>
+          <ListImage listImage={imageProker[4]} index={5}  bottom={value5}/>
+       
       </div>
     </motion.section>
   );
