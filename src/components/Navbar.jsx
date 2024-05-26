@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex px-3 lg:px-24 py-3 justify-between shadow-lg sticky top-0 z-[100] items-center bg-primary-white">
+    <nav className="flex px-3 lg:px-24 py-3 justify-between shadow-lg sticky font-helvetica-extraBold top-0 z-[100] items-center bg-primary-white">
       <img draggable="false" src={Logo} className="lg:h-20 h-10" alt="logo" />
       <ul className="lg:flex hidden gap-10 font-helvetica-regular items-center h-full text-primary-navbarText">
         <Link to={"/"} href="" className="relative group">

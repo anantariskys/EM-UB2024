@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import React from "react";
-const ListImage = ({top=0,bottom=0,listImage,index}) => {
+const ListImage = ({top,bottom,listImage,index}) => {
   return (
     <motion.div
       style={{
-        top: top,
-        bottom:bottom,
+        
+        top:top&&top,
+        bottom:bottom&&bottom,
       }}
       className={`${index <=1?"hidden lg:flex":"flex"} flex-col  gap-5 lg:w-[16%] w-[25%] relative ease-in-out`}
     >

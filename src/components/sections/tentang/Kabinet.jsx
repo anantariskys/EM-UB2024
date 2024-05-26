@@ -24,7 +24,7 @@ const Kabinet = () => {
         }}
         
         
-        className="text-2xl lg:text-6xl text-shadow-heading text-primary-paleSalmon font-medium">
+        className="text-2xl lg:text-6xl text-shadow-heading text-primary-tealBlue font-medium">
             Kabinet
         </motion.h3>
         <motion.h1 
@@ -33,7 +33,7 @@ const Kabinet = () => {
             opacity,
             scale
         }}
-        className="text-4xl lg:text-8xl text-shadow-heading font-helvetica-extraBold bg-gradient-to-b from-primary-tealBlue to-primary-charcoalGray bg-clip-text text-transparent font-black">
+        className="text-4xl lg:text-8xl text-shadow-heading font-helvetica-extraBold text-primary-tealBlue font-black">
             CERITERA KITA
         </motion.h1>
         <motion.p 
@@ -41,7 +41,7 @@ const Kabinet = () => {
             y:valueY,
             scale,
         }}
-        className="text-base lg:text-3xl text-shadow-heading text-primary-navbarText text-center italic">
+        className="text-base lg:text-3xl text-shadow-heading text-primary-tealBlue text-center italic">
             "TULISKAN CERITA, MENGGAPAI ASA, WIJAYA"
         </motion.p>
     </div>

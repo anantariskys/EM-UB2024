@@ -1,13 +1,33 @@
-import React from 'react'
+import { useScroll, useTransform,motion } from "framer-motion";
+import { useRef } from "react";
+
 
 const BPH = ({list}) => {
+    const target = useRef(null); 
+    const { scrollYProgress } = useScroll({
+      target: target,
+      offset: ['start end', 'start center'],
+    });
+    const fadeRight = useTransform(scrollYProgress, [0, 1], [250, 0]);
+    const fadeLeft = useTransform(scrollYProgress, [0, 1], [-250, 0]);
+    const fadeUp = useTransform(scrollYProgress, [0, 1], [250, 0]);
+    const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  
 
-    console.log(list)
+
   return (
-    <section className="container mx-auto px-24 py-5 justify-center flex gap-1">
+    <section className="container mx-auto lg:px-24 px-4 py-5 justify-center flex lg:flex-nowrap flex-wrap gap-1 overflow-hidden">
     {
         list.bph.map((item,index)=>(
-    <div className="w-[18%] group" key={index}>
+    <motion.div 
+    ref={target}
+    style={{
+        y:index!==0&&index!==list.bph.length-1?fadeUp:0,
+        x:index===0?fadeLeft:index===list.bph.length-1?fadeRight:0,
+        opacity
+    }}
+    
+    className="lg:w-[18%] md:[32%] w-[45%] group" key={index}>
         <div className='w-full aspect-[9/15] group-hover:-translate-y-2 duration-300 ease-in-out  relative'>
         <img draggable="false" className="h-full  object-contain rounded-lg " src={item.image}/>
 
@@ -18,7 +38,7 @@ const BPH = ({list}) => {
         <p className=" text-primary-charcoalGray text-opacity-70 text-sm">
             {item.jabatan}
         </p>
-    </div>
+    </motion.div>
 
         ))
     }

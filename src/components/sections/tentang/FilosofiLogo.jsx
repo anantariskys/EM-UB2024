@@ -60,7 +60,7 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0,1]);
          
           duration:1.2
         }}
-        className="text-primary-charcoalGray text-2xl lg:text-5xl font-black font-helvetica-extraBold w-fit whitespace-nowrap">Filosofi Logo</motion.h1>
+        className="text-primary-tealBlue text-2xl lg:text-5xl font-black font-helvetica-extraBold w-fit whitespace-nowrap">Filosofi Logo</motion.h1>
         <motion.div 
         initial={{
           x:200,
@@ -119,7 +119,7 @@ const opacity = useTransform(scrollYProgress, [0, 1], [0,1]);
               animate={{ x: 0, opacity: 1 }} 
               exit={{  opacity: 0 }} 
               transition={{ duration: 0.3, ease: "easeInOut" }}>
-                <h3 className="font-helvetica-extraBold text-2xl lg:text-4xl text-primary-paleSalmon">{activeLogo.title}</h3>
+                <h3 className="font-helvetica-extraBold text-2xl lg:text-4xl text-primary-tealBlue">{activeLogo.title}</h3>
                 <p className="lg:text-2xl text-base text-primary-charcoalGray" dangerouslySetInnerHTML={{ __html: activeLogo.desc }}></p>
               </motion.div>
             </AnimatePresence>

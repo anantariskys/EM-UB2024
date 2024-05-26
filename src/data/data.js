@@ -1,4 +1,13 @@
 // 6 PROKER MEGA BESAR
+import image1_1 from "../assets/ProkerEM/6ProkerMegaBesar/1.1.jpg";
+import image1_2 from "../assets/ProkerEM/6ProkerMegaBesar/1.2.jpg";
+import image1_3 from "../assets/ProkerEM/6ProkerMegaBesar/1.3.jpg";
+import image2_1 from "../assets/ProkerEM/6ProkerMegaBesar/2.1.jpg";
+import image2_2 from "../assets/ProkerEM/6ProkerMegaBesar/2.2.jpg";
+import image2_3 from "../assets/ProkerEM/6ProkerMegaBesar/2.3.jpg";
+import image3_1 from "../assets/ProkerEM/6ProkerMegaBesar/3.1.jpg";
+import image3_2 from "../assets/ProkerEM/6ProkerMegaBesar/3.2.jpg";
+import image3_3 from "../assets/ProkerEM/6ProkerMegaBesar/3.3.jpg";
 import image4_1 from "../assets/ProkerEM/6ProkerMegaBesar/4.1.jpeg";
 import image4_2 from "../assets/ProkerEM/6ProkerMegaBesar/4.2.jpeg";
 import image4_3 from "../assets/ProkerEM/6ProkerMegaBesar/4.3.jpeg";
@@ -40,7 +49,7 @@ import SENORA_BPH_4 from "../assets/Struktur/Petinggi/Pengembangan/SENORA_BPH_4.
 import BUMM_BPH_1 from "../assets/Struktur/Petinggi/Pengembangan/BUMM_BPH_1.png";
 import BUMM_BPH_2 from "../assets/Struktur/Petinggi/Pengembangan/BUMM_BPH_2.png";
 import BUMM_BPH_3 from "../assets/Struktur/Petinggi/Pengembangan/BUMM_BPH_3.png";
-import BUMM_BPH_4 from "../assets/Struktur/Petinggi/Pengembangan/SENORA_BPH_4.png";
+import BUMM_BPH_4 from "../assets/Struktur/Petinggi/Pengembangan/BUMM_BPH_4.png";
 import PSDM from "../assets/Struktur/Logo/PSDM.svg";
 import RINOYA from "../assets/Struktur/Logo/RINOYA.svg";
 import SENORA from "../assets/Struktur/Logo/SENORA.svg";
@@ -903,9 +912,8 @@ export const DJO = [
       },
       {
         nama: "KEMENTERIAN KOMUNIKASI DAN INFORMASI",
-        image:
-          "Kementerian Komunikasi dan Informasi siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya",
-        desc: "",
+        image:"",
+        desc: "Kementerian Komunikasi dan Informatika siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya.",
         bph: [
           {
             nama: "Muhammad Rayhan C.M.",
@@ -969,9 +977,9 @@ export const prokerMegaBesar = [
     id: 1,
     nama: "Brawijaya Intern and Career Expo 2024",
     image: [
-      "https://source.unsplash.com/random/1200×1200/?food",
-      "https://source.unsplash.com/random/1200×1200/?drink",
-      "https://source.unsplash.com/random/1200×1200/?candy",
+      image1_1,
+      image1_2,
+      image1_3,
     ],
     body: [
       "Brawijaya Intern and Career Expo 2024 merupakan inovasi baru yang menjadi ajang pra Upaya Program Kerja Jadi Bhayangkari Mahasiswa Universitas Brawijaya tahun 2024 diadakan naungan Kementrian Pengembangan Sumber Daya Mahasiswa (PSDM) yang bekerjasama dengan mahasiswa dan perwakilan dari organisasi lain mahasiswa Universitas Brawijaya.",
@@ -985,9 +993,9 @@ export const prokerMegaBesar = [
     id: 2,
     nama: "Raja Brawijaya 2024",
     image: [
-      "https://source.unsplash.com/random/1200×1200/?spiderman",
-      "https://source.unsplash.com/random/1200×1200/?avenger",
-      "https://source.unsplash.com/random/1200×1200/?batman",
+     image2_1,
+     image2_2,
+     image2_3,
     ],
     body: [
       "Pengenalan Kehidupan Kampus bagi Mahasiswa Baru merupakan wahana bagi perguruan tinggi untuk memperkenalkan dan mempersiapkan Mahasiswa baru dalam proses transisi menjadi Mahasiswa yang dewasa dan mandiri, serta mempercepat proses adaptasi Mahasiswa dengan lingkungan yang baru dan memberikan bekal dikehidupan kampus.",
@@ -999,9 +1007,9 @@ export const prokerMegaBesar = [
     id: 3,
     nama: "Kampung Budaya 2024",
     image: [
-      "https://source.unsplash.com/random/1200×1200/?graduate",
-      "https://source.unsplash.com/random/1200×1200/?school",
-      "https://source.unsplash.com/random/1200×1200/?university",
+   image3_1,
+   image3_2,
+   image3_3
     ],
     body: [
       "Kampung Budaya merupakan rangkaian kegiatan pelestarian budaya untuk meningkatkan kreativitas mahasiswa dalam mengenalkan kekayaan warisan budaya Indonesia kepada masyarakatumum, terutama para anggota akademis Universitas Brawijaya.",

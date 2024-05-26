@@ -11,7 +11,7 @@ const Proker = () => {
 
     return (
         <div className="font-helvetica-regular bg-primary-white w-full">
-            <section className="h-screen  w-full  relative flex items-center ">
+            <section className="h-screen  w-full px-4  relative flex items-center ">
                 <img
                     src={right}
                     className="absolute top-0 right-0 w-[10%] aspect-auto"
@@ -24,14 +24,14 @@ const Proker = () => {
                     alt="img"
                     draggable="false"
                 />
-                <div className="flex justify-center relative md:gap-10 gap5 lg:gap-20 xl:gap-36 items-center container mx-auto">
+                <div className="flex justify-center lg:flex-row flex-col relative md:gap-10 gap-5 lg:gap-20 xl:gap-36 items-center container mx-auto">
                     <img
                         src={hero}
-                        className="aspect-auto  w-1/4 "
+                        className="aspect-auto w-4/5 lg:w-1/4 "
                         draggable="false"
                         alt="heroImage"
                     />
-                    <div className="font-helvetica-extraBold  text-5xl text-primary-charcoalGray ">
+                    <div className="font-helvetica-extraBold text-3xl lg:text-start text-center lg:text-5xl text-primary-charcoalGray ">
                         <h1>6 PROKER</h1>
                         <h1>MEGA BESAR</h1>
                         <h1 className="text-primary-tealBlue">EM UB 2024</h1>
@@ -43,7 +43,7 @@ const Proker = () => {
                 <button className="w-fit rounded mx-auto  py-2 px-4 bg-primary-charcoalGray text-primary-white active:scale-95 duration-300 ease-in-out ">
                     MEGA PROKER
                 </button>
-                <main className="grid grid-cols-3 grid-rows-1 gap-10 py-10">
+                <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-1 gap-5 lg:gap-10 py-10">
                     {prokerMegaBesar.map((item, index) => (
                         <Link to={`/proker/${item.id}`} key={index}>
                         <div className="w-full aspect-[9/7] group hover:shadow-2xl duration-500 ease-in-out relative shadow-xl rounded overflow-hidden">

@@ -79,7 +79,7 @@ const ArahanStrategis = () => {
                   style={{
                     x:value2
                 }}
-                className="text-primary-charcoalGray text-2xl lg:text-5xl font-black  font-helvetica-extraBold w-fit whitespace-nowrap ">
+                className="text-primary-tealBlue text-2xl lg:text-5xl font-black  font-helvetica-extraBold w-fit whitespace-nowrap ">
                     Arahan Strategis
                 </motion.h1>
             </div>

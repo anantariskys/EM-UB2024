@@ -21,7 +21,7 @@ export default {
       fontFamily: {
         'helvetica-extraBold': ['Helvetica ExtraBold', 'serif'],
         'helvetica-regular': ['Helvetica Regular', 'serif'],
-        
+        'black-signature': ['Black Signature', 'serif'],
       },
     },
   },

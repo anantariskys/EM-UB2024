@@ -1,23 +1,42 @@
 import React from "react";
-import SideBar from "./SideBar";
+import { useState } from "react";
+import AdminLayout from "../../components/layouts/AdminLayout";
+import Admin from "./Admin";
+import Berita from "./Berita";
+import Dashboard from "./Dashboard";
+import Tautan from "./Tautan";
+
 
 const AdminPage = () => {
+  const [isActive,setIsActive] = useState("dashboard");
+  const [loading,setLoading] = useState(true)
+
+ 
+
   return (
-    <>
-      <div>
-        <div className="drawer-content absolute left-[40%] top-[45%] text-white font-helvetica">
-          <h2 className="text-primary-tealBlue font-helvetica font-extrabold text-3xl ">
-            Welcome To Admin Page!!!
-          </h2>
-          <p>Menu Admin dapat dilihat pada sidebar di samping kiri</p>
-          <p>
-            Mohon untuk mengisikan data dengan benar ketika mengunggah sesuatu
-          </p>
-        </div>
-        <div className=""></div>
-        <SideBar />
-      </div>
-    </>
+   <AdminLayout setIsActive={setIsActive} isActive={isActive}>
+    {
+      isActive==="dashboard"&&(
+        <Dashboard/>
+      )
+    }
+    {
+      isActive==="admin"&&(
+        <Admin/>
+      )
+    }
+    {
+      isActive==="berita"&&(
+        <Berita/>
+      )
+    }
+    {
+      isActive==="tautan"&&(
+        <Tautan/>
+      )
+    }
+
+   </AdminLayout>
   );
 };
 

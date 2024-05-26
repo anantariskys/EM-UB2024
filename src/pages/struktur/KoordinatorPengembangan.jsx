@@ -26,9 +26,24 @@ const KoordinatorPengembangan = () => {
       setIsActive(scrollPosition >= showFixedDivPosition);
     };
   
-    const scrollToSection = (index) => {
+    const scrollToSection = (index, duration = 1000, offset = 0) => {
       if (refs.current[index]) {
-        refs.current[index].scrollIntoView({ behavior: "smooth"});
+        const targetElement = refs.current[index];
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+    
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+          const run = Math.min(timeElapsed / duration, 1);
+          const newPosition = startPosition + distance * run;
+          window.scrollTo(0, newPosition);
+          if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+    
+        requestAnimationFrame(animation);
       }
     };
 
@@ -37,13 +52,15 @@ const KoordinatorPengembangan = () => {
         <div className="font-helvetica-regular bg-primary-white pb-20">
             <Header bpi={Pengembangan[0].bpi} title={"KEMENTRIAN KOORDINATOR PENGEMBANGAN"}/>
 
-            <section className="mx-auto px-24 container flex justify-center  gap-5 py-10">
+            <section className="mx-auto  lg:px-24 container flex justify-center gap-1 lg:gap-5 py-10 lg:flex-nowrap flex-wrap">
                 {Pengembangan[0].kementerian.map((item, index) => (
                     <CardKementrian
                     name={item.nama}
                     key={index}
                     image={item.image}
                     desc={item.desc}
+                    length={Pengembangan[0].kementerian.length}
+                    index={index}
                     onClick={() => scrollToSection(index)}
                   />
                 ))}

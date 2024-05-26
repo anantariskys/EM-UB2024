@@ -24,7 +24,7 @@ const ProkerUnggulan = () => {
   return (
     <motion.section ref={targetRef} className="w-full relative overflow-hidden  flex flex-col justify-center items-center h-screen lg:h-[calc(100vh+20vh)] bg-gradient-to-t from-black via-primary-tealBlue to-black gap-5  ">
       <h1 className="font-helvetica-extraBold text-2xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-primary-skyBlue to-white text-balance w-4/5 text-center relative drop-shadow-2xl z-40">
-        PROGRAM KERJA 6 MEGA BESAR EM UB 2024
+        6 PROGRAM KERJA MEGA BESAR EM UB 2024
       </h1>
       <Link to={"/proker"}>
         <div
@@ -45,7 +45,7 @@ const ProkerUnggulan = () => {
           <ListImage listImage={imageProker[0]} index={0}  bottom={value1}/>
           <ListImage listImage={imageProker[1]} index={1} top={value2}/>
           <ListImage listImage={imageProker[2]} index={3} bottom={value3}/>
-          <ListImage listImage={imageProker[3]} index={4}  top={value2}/>
+          <ListImage listImage={imageProker[3]} index={4}  top={value4}/>
           <ListImage listImage={imageProker[4]} index={5}  bottom={value5}/>
        
       </div>

@@ -14,8 +14,23 @@ const sambutan =[
 ]
 
 const SambutanScroll = () => {
+    const target = useRef(null);
+
+    const { scrollYProgress } = useScroll({
+      target: target,
+      offset: ["start end", "start center"],
+  });
+
+  const x = useTransform(scrollYProgress, [0,1], [200,0]);
   return (
-    <div className="text-xl w-4/5 lg:w-3/5 text-primary-charcoalGray">
+    <div ref={target} className="text-xl w-4/5 lg:w-3/5">
+          <motion.h3
+    style={{
+        x:x
+    }}
+    className="text-sm   lg:text-4xl text-center mb-5 text-shadow-heading  self-center text-primary-tealBlue font-helvetica-extraBold ">
+        Presiden dan Wakil Presiden
+    </motion.h3>
             <div className="flex flex-col gap-5 text-base">
                 {
                     sambutan.map((item,index)=>(
@@ -90,7 +105,7 @@ const Paragraph = ({paragraph})=>{
     return (
         <p
         ref={target}
-        className="flex flex-wrap text-sm lg:text-base  font-semibold "
+        className="flex flex-wrap text-p text-sm lg:text-base  text-primary-tealBlue font-semibold "
         >
             {
                 words.map((item,index)=>{
@@ -109,7 +124,7 @@ const Word =({children,progress,range,index})=>{
     const opacity = useTransform(progress,range,[0,1])
     return(
         <span className="relative">
-            <span className="absolute opacity-40 lg:mr-4 mr-2 leading-relaxed lg:leading-8">
+            <span className="absolute opacity-0 lg:mr-4 mr-2 leading-relaxed lg:leading-8">
                 {children}
             </span>
         <motion.span

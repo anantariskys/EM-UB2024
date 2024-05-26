@@ -10,5 +10,10 @@
   font-family: 'Helvetica Regular';
   src: url('/public/HelveticaNowDisplay-Regular.ttf') format('truetype');
 }
-
+@font-face {
+  font-family: 'Black Signature';
+  src: url('/public/BlackSignature.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 

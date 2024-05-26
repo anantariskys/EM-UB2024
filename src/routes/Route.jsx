@@ -13,13 +13,12 @@ import KoordinatorPergerakan from "../pages/struktur/KoordinatorPergerakan";
 import KoordinatorDJO from "../pages/struktur/KoordinatorDJO";
 import KoordinatorSPI from "../pages/struktur/KoordinatorSPI";
 import KoordinatorPPM from "../pages/struktur/KoordinatorPPM";
-import NewsForm from "../pages/admin/NewsForm";
-import ProkerForm from "../pages/admin/ProkerForm";
-import StrukturPres from "../pages/struktur/StrukturPres";
 import Struktur from "../pages/struktur/Struktur";
 import AdminPage from "../pages/admin/AdminPage";
-import TautanForm from "../pages/admin/TautanForm";
-import AlumniForm from "../pages/admin/AlumniForm";
+import Login from "../pages/admin/Login";
+import GuestRoute from "./visibility/GuestRoute";
+import PrivateRoute from "./visibility/PrivateRoute";
+import { AuthProvider } from "../hooks/useAuth";
 
 const createRouter = createBrowserRouter([
   {
@@ -103,7 +102,7 @@ const createRouter = createBrowserRouter([
     ),
   },
   {
-    path: "/struktur/diplomasi-dan-jaringan-organisasi",
+    path: "/struktur/djo",
     element: (
       <PageLayout>
         <KoordinatorDJO />
@@ -126,50 +125,56 @@ const createRouter = createBrowserRouter([
       </PageLayout>
     ),
   },
+
   {
     path: "/comingsoon",
     element: <ComingSoon />,
   },
   {
+    path: "struktur",
+    element: (
+    <PageLayout>
+      <Struktur />
+    </PageLayout>)
+  },
+  {
+    path:'/',
+    element: <GuestRoute />,
+    children: [
+      {
+        path: "/auth",
+        element: <Login/>,
+      },
+    ],
+  },
+  {
+    path:'/',
+    element: <PrivateRoute/>,
+    children: [
+      {
+        path: "adminnnn",
+        element: <AdminPage />,
+      },
+     
+    
+    ],
+  },
+ 
+  {
     path: "/*",
     element: <div>Not found</div>,
   },
-  {
-    path: "/adminnnn",
-    element: <AdminPage />,
-  },
-  {
-    path: "/upberita",
-    element: <NewsForm />,
-  },
-  {
-    path: "/upproker",
-    element: <ProkerForm />,
-  },
-  {
-    path: "/upalumni",
-    element: <AlumniForm />,
-  },
-  {
-    path: "/uptautan",
-    element: <TautanForm />,
-  },
-  // {
-  //   path: "/upberita",
-  //   element: <NewsForm />,
-  // },
-  // {
-  //   path: "/upberita",
-  //   element: <NewsForm />,
-  // },
-  {
-    path: "/struktur",
-    element: <Struktur />,
-  },
+ 
 ]);
 
 const Route = () => {
-  return <RouterProvider router={createRouter} />;
+  return (
+   
+      <AuthProvider>
+        <RouterProvider router={createRouter} />
+      </AuthProvider>
+   
+  );
 };
 
 export default Route;
