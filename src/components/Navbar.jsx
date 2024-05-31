@@ -50,7 +50,7 @@ const Navbar = () => {
           <div className="absolute -translate-y-1/2 top-1/2 -left-5 duration-1000 skew-x-12 w-0 group-hover:w-[calc(100%+50px)] bg-primary-tealBlue h-[calc(100%+20px)] bottom-0 z-0"></div>
         </button>
       </ul>
-      <div className="lg:hidden flex flex-col justify-center items-center cursor-pointer">
+      <div className="lg:hidden text-primary-charcoalGray flex flex-col justify-center items-center cursor-pointer">
         <div onClick={toggleMenu}>
           <div className={`w-6 h-0.5 bg-primary-tealBlue rounded-lg transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`}></div>
           <div className={`w-6 h-0.5 bg-primary-tealBlue rounded-lg my-1 transition-all duration-300 ${isOpen ? "opacity-0" : ""}`}></div>

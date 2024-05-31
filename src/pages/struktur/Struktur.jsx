@@ -85,12 +85,12 @@ const Struktur = () => {
       <section className="flex flex-col gap-5 container mx-auto lg:px-24 px-4 py-16">
         {
           data.map((item,index)=>(
-        <div className="e w-full h-full  rounded shadow-xl flex justify-between py-5 items-center px-16">
-          <h3 className="text-primary-tealBlue text-3xl w-2/5 font-helvetica font-extrabold   ">
+        <div className="e w-full h-full  rounded shadow-xl flex justify-between py-2 lg:py-5 items-center px-4 lg:px-16">
+          <h3 className="text-primary-tealBlue text-xs md:text-xl lg:text-3xl w-full lg:w-2/5 font-helvetica font-extrabold   ">
             {item.nama1} <span className="text-black"> {item.nama2}</span>
           </h3>
           <div className="w-2/5">
-          <div className="w-full grid-cols-2  grid-rows-1 grid  gap-5">
+          <div className="w-full grid-cols-2  grid-rows-1 grid gap-1 lg:gap-5">
             {
               item.image.map((item,index)=>(
                 <img src={item} key={index} draggable="false" alt="img" className="w-full h-full aspect-auto object-cover " />
@@ -105,7 +105,7 @@ const Struktur = () => {
               href=""
               className="hover:bg-primary-charcoalGray duration-300 ease-in-out rounded-full hover:text-primary-white"
             >
-              <Icon icon={"iconamoon:arrow-up-2"} className="text-5xl rotate-90"/>
+              <Icon icon={"iconamoon:arrow-up-2"} className="text-2xl lg:text-5xl rotate-90"/>
             
             </Link>
         </div>

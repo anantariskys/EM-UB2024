@@ -48,7 +48,7 @@ const KoordinatorDJO = () => {
     };
 
   return (
-    <div className="font-helvetica-regular bg-primary-white pb-20 relative">
+    <div className="font-helvetica-regular bg-primary-white pb-20 relative overflow-hidden">
       <Header bpi={DJO[0].bpi} title={"KEMENTRIAN KOORDINATOR DIPLOMASI DAN JARINGAN ORGANISASI"} />
       <section className="mx-auto  lg:px-24 container flex justify-center gap-1 lg:gap-5 py-10 lg:flex-nowrap flex-wrap">
         {DJO[0].kementerian.map((item, index) => (

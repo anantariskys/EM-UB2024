@@ -124,7 +124,7 @@ const Word =({children,progress,range,index})=>{
     const opacity = useTransform(progress,range,[0,1])
     return(
         <span className="relative">
-            <span className="absolute opacity-0 lg:mr-4 mr-2 leading-relaxed lg:leading-8">
+            <span className="absolute opacity-40 lg:mr-4 mr-2 leading-relaxed lg:leading-8">
                 {children}
             </span>
         <motion.span

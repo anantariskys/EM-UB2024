@@ -46,7 +46,7 @@ const KoordinatorSPI = () => {
   };
 
   return (
-    <div className="font-helvetica-regular bg-primary-white pb-20">
+    <div className="font-helvetica-regular bg-primary-white pb-20 overflow-hidden">
       <Header bpi={SPI[0].bpi} title={"SATUAN PENGENDALI INTERNAL"} />
       <section className="mx-auto  lg:px-24 container flex justify-center gap-1 lg:gap-5 py-10 lg:flex-nowrap flex-wrap">
         {SPI[0].kementerian.map((item, index) => (

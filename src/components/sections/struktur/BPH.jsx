@@ -6,7 +6,7 @@ const BPH = ({list}) => {
     const target = useRef(null); 
     const { scrollYProgress } = useScroll({
       target: target,
-      offset: ['start end', 'start center'],
+      offset: window.innerWidth>728?['start end', 'start center']:['start end', 'start 0.9'],
     });
     const fadeRight = useTransform(scrollYProgress, [0, 1], [250, 0]);
     const fadeLeft = useTransform(scrollYProgress, [0, 1], [-250, 0]);

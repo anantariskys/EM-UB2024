@@ -84,13 +84,14 @@ import PPP from "../assets/Struktur/Logo/P3.svg";
 
 //PPM
 //Gambar PPM
-// import SOSMA_BPH_1 from "../assets/SOSMA_BPH_1.png";
 import PPM_BPI_1 from "../assets/Struktur/Petinggi/PPM/PPM_BPI_1.png";
 import PPM_BPI_2 from "../assets/Struktur/Petinggi/PPM/PPM_BPI_2.png";
 import SOSMA_BPH_2 from "../assets/Struktur/Petinggi/PPM/SOSMA_BPH_2.png";
-// import SOSMA_BPH_3 from "../assets/SOSMA_BPH_3.png";
+import SOSMA_BPH_1 from "../assets/Struktur/Petinggi/PPM/SOSMA_BPH_1.png";
+// import SOSMA_BPH_1 from "../assets/SOSMA_BPH_1.png";
 import SOSMA_BPH_4 from "../assets/Struktur/Petinggi/PPM/SOSMA_BPH_4.png";
 // import LH_BPH_1 from "../assets/LH_BPH_1.png";
+import LH_BPH_1 from "../assets/Struktur/Petinggi/PPM/LH_BPH_1.png";
 import LH_BPH_2 from "../assets/Struktur/Petinggi/PPM/LH_BPH_2.png";
 import LH_BPH_3 from "../assets/Struktur/Petinggi/PPM/LH_BPH_3.png";
 import LH_BPH_4 from "../assets/Struktur/Petinggi/PPM/LH_BPH_4.png";
@@ -120,7 +121,7 @@ import KOMINFO_BPH_4 from "../assets/Struktur/Petinggi/DJO/KOMINFO_BPH_4.png";
 import KOMINFO_BPH_5 from "../assets/Struktur/Petinggi/DJO/KOMINFO_BPH_5.png";
 import DAGRI from "../assets/Struktur/Logo/DAGRI.svg";
 import LUGRI from "../assets/Struktur/Logo/LUGRI.svg";
-// import KOMINFO from "../assets/Struktur/Logo/KOMINFO.svg";
+import KOMINFO from "../assets/Struktur/Logo/KOMINFO.png";
 //Gambar DJO
 
 export const SPI = [
@@ -666,7 +667,7 @@ export const PPM = [
           {
             nama: "Ali Akbar Ar Rasyidi",
             jabatan: "Menteri Sosial dan Masyarakat",
-            image: "",
+            image: SOSMA_BPH_1,
           },
           {
             nama: "Kamila Athaya Rachman",
@@ -719,7 +720,7 @@ export const PPM = [
           {
             nama: "Ailsya Anargya Ardiyanti",
             jabatan: "Menteri Lingkungan Hidup",
-            image: "",
+            image: LH_BPH_1,
           },
           {
             nama: "Aprilia Dyah Seribuhana",
@@ -912,7 +913,7 @@ export const DJO = [
       },
       {
         nama: "KEMENTERIAN KOMUNIKASI DAN INFORMASI",
-        image:"",
+        image:KOMINFO,
         desc: "Kementerian Komunikasi dan Informatika siap memberikan kontribusi penuh dalam mewujudkan perubahan di kampus biru, kampus perjuangan, Universitas Brawijaya.",
         bph: [
           {
